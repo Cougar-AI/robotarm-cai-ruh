@@ -10,4 +10,4 @@ For setting up a **Mu**lti-**Jo**int dynamics with **Co**ntact (MuJoCo) interact
 MuJoCo is developed and maintained by Google DeepMind [GitHub](https://github.com/google-deepmind/mujoco)
 
 ## IsaacSim
-For setting up IsaacSim please see [isaacsim/ISAACSIM_VIEWER.md](isaacsim/ISAACSIM_VIEWER.md)
+For setting up NVIDIA IsaacSim please see [isaacsim/ISAACSIM_VIEWER.md](isaacsim/ISAACSIM_VIEWER.md)
