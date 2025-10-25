@@ -7,6 +7,8 @@ Currently, `IsaacSim` and `MuJoCo` tutorials are planned.
 ## MuJoCo
 For setting up a **Mu**lti-**Jo**int dynamics with **Co**ntact (MuJoCo) interactive viewer please see [mujoco/MUJOCO_VIEWER.md](mujoco/MUJOCO_VIEWER.md).
 
+For setting up MuJoCo with ROS2 control and MuJoCo's viewer, please see [mujoco/MUJOCO_ROS2.md](mujoco/MUJOCO_ROS2.md)
+
 MuJoCo is developed and maintained by Google DeepMind [GitHub](https://github.com/google-deepmind/mujoco)
 
 ## IsaacSim

@@ -1,0 +1,20 @@
+# ----------------------------------------------------------------
+# ROS Workspaces - Aggressive Ignore
+# Ignore all contents of ROS workspaces...
+software/ws_*/*
+
+# ...but *do not* ignore the root placeholder
+!software/ws_*/rosworkspace.placeholder
+
+# ...and *do not* ignore the 'src' directory itself
+!software/ws_*/src/
+
+# Ignore all content *inside* 'src'
+software/ws_*/src/*
+
+# ...but *do not* ignore the 'src' placeholder
+!software/ws_*/src/rossrc.placeholder
+# ----------------------------------------------------------------
+
+# User-specific viewer directory
+robot-viewer
