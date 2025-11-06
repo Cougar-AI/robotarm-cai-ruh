@@ -147,14 +147,6 @@ ros2 service call /clear std_srvs/srv/Empty "{}"
 
 ---
 
-## Summary
 
-In this tutorial, you learned:
 
-- ✅ How to launch and control Turtlesim
-- ✅ Working with ROS 2 nodes and topics
-- ✅ Publishing and echoing topic data
-- ✅ Using ROS 2 services
-- ✅ Managing multiple turtles in a simulation
-
-**Next Steps:** Try creating your own ROS 2 nodes to control the turtles programmatically!
+**Next Steps:** Try creating your own ROS 2 nodes to control the turtles programmatically
