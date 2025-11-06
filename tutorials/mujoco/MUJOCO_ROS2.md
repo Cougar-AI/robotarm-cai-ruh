@@ -142,6 +142,15 @@ Ignore the warnings, they are not critical.
 # Use ros2 for demo in ws_mjc/src/mujoco_demo_robot/launch/cart_effort.launch.py
 ros2 launch mujoco_demo_robot cart_effort.launch.py
 ```
+# If the launch fails and you get package not found you may need to source the setup.bash
+```bash
+#source setup.bash
+source ~/robotarm-cai-ruh/software/ws_mjc/install/setup.bash
+
+#Then launch again
+ros2 launch mujoco_demo_robot cart_effort.launch.py
+
+```
 ## Credit
 
 This tutorial heavily follows and builds upon the excellent setup and examples from **[rxdu/mujoco_sim_ros2](https://github.com/rxdu/mujoco_sim_ros2)** (and related repos **mujoco_ros2_control** and **mujoco_demo_robot**). Big thanks to that project for a clean integration of the MuJoCo [`simulate`](https://github.com/google-deepmind/mujoco/tree/main/simulate) app with ROS 2 Jazzy [pluginlib](https://github.com/ros/pluginlib).
