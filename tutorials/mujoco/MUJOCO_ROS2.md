@@ -142,7 +142,7 @@ Ignore the warnings, they are not critical.
 # Use ros2 for demo in ws_mjc/src/mujoco_demo_robot/launch/cart_effort.launch.py
 ros2 launch mujoco_demo_robot cart_effort.launch.py
 ```
-# If the launch fails and you get package not found you may need to source the setup.bash
+# If the launch fails and you may need to source setup.bash
 ```bash
 #source setup.bash
 source ~/robotarm-cai-ruh/software/ws_mjc/install/setup.bash
