@@ -2,6 +2,11 @@
 
 This tutorial gives you a reusable ROS workspace pattern for robot-arm simulation and planning, then demonstrates it with a UR3 Gazebo + MoveIt scene.
 
+Important distro note:
+1) `Ubuntu 22.04 (jammy)` -> use `ROS 2 Humble`
+2) `Ubuntu 24.04 (noble)` -> use `ROS 2 Jazzy`
+3) If you are on WSL2 and `apt update` shows `noble`, do not try to install `ros-humble-*` packages.
+
 ##### References: [ROS 2](https://docs.ros.org/en/humble/index.html); [Gazebo Sim](https://gazebosim.org/docs); [MoveIt 2](https://moveit.picknik.ai/main/index.html); [UR ROS 2](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver); [WSL2](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 > Platform status
@@ -32,7 +37,7 @@ For a robot arm, the usual package split is:
 ## Outcome
 
 After this guide, you will have:
-1) ROS 2 Humble + Gazebo + MoveIt installed,
+1) ROS 2 Humble or Jazzy + Gazebo + MoveIt installed,
 2) a general workspace initializer for your future custom URDF,
 3) a UR3 demo launcher with scene assets and trajectory sequence,
 4) a working path for planning + simulation workflows.
@@ -49,7 +54,9 @@ dpkg --print-architecture
 uname -a
 ```
 
-Expected: Ubuntu `jammy` and `arm64`.
+Expected for the Jetson path: Ubuntu `jammy` and `arm64`.
+
+If you are on WSL2, it is common to see Ubuntu `noble` and `amd64`. In that case, use the `jazzy` package names in the next step.
 
 ## A.2 Install base dependencies + locale
 
@@ -73,6 +80,8 @@ http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME
 
 ## A.4 Install ROS 2 + Gazebo + MoveIt + UR + BCR stacks
 
+Ubuntu `22.04` / `jammy`:
+
 ```bash
 sudo apt update
 sudo apt install -y \
@@ -93,10 +102,32 @@ sudo apt install -y \
   ros-humble-bcr-arm
 ```
 
+Ubuntu `24.04` / `noble` (typical for newer WSL2 installs):
+
+```bash
+sudo apt update
+sudo apt install -y \
+  ros-jazzy-desktop \
+  ros-dev-tools \
+  python3-colcon-common-extensions \
+  python3-vcstool \
+  ros-jazzy-ros-gz \
+  ros-jazzy-ros-gz-sim \
+  ros-jazzy-ros-gz-sim-demos \
+  ros-jazzy-gz-ros2-control \
+  ros-jazzy-gz-ros2-control-demos \
+  ros-jazzy-moveit \
+  ros-jazzy-moveit-task-constructor-demo \
+  ros-jazzy-ur \
+  ros-jazzy-ur-simulation-gz \
+  ros-jazzy-ur-moveit-config \
+  ros-jazzy-bcr-arm
+```
+
 ## A.5 Source ROS and create workspace path
 
 ```bash
-echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
+echo "source /opt/ros/<humble-or-jazzy>/setup.bash" >> ~/.bashrc
 source ~/.bashrc
 mkdir -p ~/robotarm-cai-ruh/software/ws_ros/src
 ```
@@ -126,6 +157,12 @@ Optional build immediately:
 
 ```bash
 bash tutorials/ros2/init_workspace.sh --build
+```
+
+If you want to force a specific distro, pass it explicitly:
+
+```bash
+bash tutorials/ros2/init_workspace.sh --ros-distro jazzy
 ```
 
 What it creates:
@@ -158,6 +195,12 @@ This is the “rich demo” path you asked for: UR3 in Gazebo, scene objects, an
 
 ```bash
 bash tutorials/ros2/ur3_demo.sh --clean-stale
+```
+
+On Ubuntu `24.04`, you can also pass the distro explicitly:
+
+```bash
+bash tutorials/ros2/ur3_demo.sh --ros-distro jazzy --clean-stale
 ```
 
 What this script does:
@@ -195,6 +238,12 @@ You still have the BCR-focused launcher:
 bash tutorials/ros2/setup.sh --clean-stale
 ```
 
+Or, explicitly on Ubuntu `24.04`:
+
+```bash
+bash tutorials/ros2/setup.sh --ros-distro jazzy --clean-stale
+```
+
 This remains useful for quick verification on this machine.
 
 ---
@@ -208,7 +257,9 @@ wsl --install -d Ubuntu
 wsl --update
 ```
 
-Then run the same Linux commands from sections `A` through `D` inside WSL Ubuntu.
+Then run the same Linux commands from sections `A` through `D` inside WSL Ubuntu, but choose the ROS distro that matches your Ubuntu release:
+1) WSL Ubuntu `22.04` -> `humble`
+2) WSL Ubuntu `24.04` -> `jazzy`
 
 ---
 

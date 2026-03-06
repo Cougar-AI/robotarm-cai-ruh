@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROS_DISTRO_NAME="humble"
+ROS_DISTRO_NAME="${ROS_DISTRO:-}"
 BUILD_WS=0
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -16,7 +16,7 @@ Usage: $(basename "$0") [options]
 Initialize a general-purpose ROS 2 workspace layout for a custom robot arm.
 
 Options:
-  --ros-distro <name>   ROS distro to source (default: humble)
+  --ros-distro <name>   ROS distro to source (default: auto-detect)
   --ws-dir <path>       Workspace directory (default: software/ws_ros)
   --build               Run colcon build after creating packages
   --help                Show this help text
@@ -29,6 +29,29 @@ source_safe() {
   # shellcheck disable=SC1090
   source "${setup_file}"
   set -u
+}
+
+resolve_ros_distro() {
+  local setup_file
+
+  if [[ -n "${ROS_DISTRO_NAME}" ]]; then
+    return
+  fi
+
+  for distro in humble jazzy; do
+    if [[ -f "/opt/ros/${distro}/setup.bash" ]]; then
+      ROS_DISTRO_NAME="${distro}"
+      return
+    fi
+  done
+
+  shopt -s nullglob
+  for setup_file in /opt/ros/*/setup.bash; do
+    ROS_DISTRO_NAME="$(basename "$(dirname "${setup_file}")")"
+    shopt -u nullglob
+    return
+  done
+  shopt -u nullglob
 }
 
 while [[ $# -gt 0 ]]; do
@@ -58,8 +81,11 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+resolve_ros_distro
+
 if [[ ! -f "/opt/ros/${ROS_DISTRO_NAME}/setup.bash" ]]; then
-  echo "Missing ROS setup file: /opt/ros/${ROS_DISTRO_NAME}/setup.bash"
+  echo "Missing ROS setup file under /opt/ros."
+  echo "Install ROS 2 first, or pass --ros-distro <name>."
   exit 1
 fi
 

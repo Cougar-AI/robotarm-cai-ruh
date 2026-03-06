@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROS_DISTRO_NAME="humble"
+ROS_DISTRO_NAME="${ROS_DISTRO:-}"
 UR_TYPE="ur3"
 WORLD_FILE="empty.sdf"
 WITH_MOVEIT=1
@@ -37,7 +37,7 @@ Options:
   --no-assets           Do not spawn scene assets
   --headless            Start Gazebo server only (no GUI)
   --clean-stale         Kill stale Gazebo/ROS launch processes first
-  --ros-distro <name>   ROS distro to source (default: humble)
+  --ros-distro <name>   ROS distro to source (default: auto-detect)
   --help                Show this help text
 USAGE
 }
@@ -48,6 +48,29 @@ source_safe() {
   # shellcheck disable=SC1090
   source "${setup_file}"
   set -u
+}
+
+resolve_ros_distro() {
+  local setup_file
+
+  if [[ -n "${ROS_DISTRO_NAME}" ]]; then
+    return
+  fi
+
+  for distro in humble jazzy; do
+    if [[ -f "/opt/ros/${distro}/setup.bash" ]]; then
+      ROS_DISTRO_NAME="${distro}"
+      return
+    fi
+  done
+
+  shopt -s nullglob
+  for setup_file in /opt/ros/*/setup.bash; do
+    ROS_DISTRO_NAME="$(basename "$(dirname "${setup_file}")")"
+    shopt -u nullglob
+    return
+  done
+  shopt -u nullglob
 }
 
 while [[ $# -gt 0 ]]; do
@@ -96,8 +119,11 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+resolve_ros_distro
+
 if [[ ! -f "/opt/ros/${ROS_DISTRO_NAME}/setup.bash" ]]; then
-  echo "Missing ROS setup file: /opt/ros/${ROS_DISTRO_NAME}/setup.bash"
+  echo "Missing ROS setup file under /opt/ros."
+  echo "Install ROS 2 first, or pass --ros-distro <name>."
   exit 1
 fi
 

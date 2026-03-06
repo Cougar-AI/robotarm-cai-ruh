@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROS_DISTRO_NAME="humble"
+ROS_DISTRO_NAME="${ROS_DISTRO:-}"
 AUTO_MOVE=1
 CLEAN_STALE=0
-WORLD_PATH="/opt/ros/humble/share/bcr_arm_gazebo/worlds/empty.world"
+WORLD_PATH=""
 WAIT_TIMEOUT="${WAIT_TIMEOUT:-120}"
 
 usage() {
@@ -14,7 +14,7 @@ Usage: $(basename "$0") [options]
 Starts the BCR arm Gazebo demo and optionally sends trajectory commands.
 
 Options:
-  --ros-distro <name>   ROS distro to source (default: humble)
+  --ros-distro <name>   ROS distro to source (default: auto-detect)
   --world <path>        Gazebo world path for bcr_arm.gazebo.launch.py
   --no-auto-move        Start demo but do not send trajectory command
   --clean-stale         Kill stale Gazebo/ROS launch processes before start
@@ -28,6 +28,29 @@ source_safe() {
   # shellcheck disable=SC1090
   source "${setup_file}"
   set -u
+}
+
+resolve_ros_distro() {
+  local setup_file
+
+  if [[ -n "${ROS_DISTRO_NAME}" ]]; then
+    return
+  fi
+
+  for distro in humble jazzy; do
+    if [[ -f "/opt/ros/${distro}/setup.bash" ]]; then
+      ROS_DISTRO_NAME="${distro}"
+      return
+    fi
+  done
+
+  shopt -s nullglob
+  for setup_file in /opt/ros/*/setup.bash; do
+    ROS_DISTRO_NAME="$(basename "$(dirname "${setup_file}")")"
+    shopt -u nullglob
+    return
+  done
+  shopt -u nullglob
 }
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -65,10 +88,16 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+resolve_ros_distro
+
 if [[ ! -f "/opt/ros/${ROS_DISTRO_NAME}/setup.bash" ]]; then
-  echo "Missing ROS setup: /opt/ros/${ROS_DISTRO_NAME}/setup.bash"
-  echo "Install ROS 2 first, then rerun."
+  echo "Missing ROS setup file under /opt/ros."
+  echo "Install ROS 2 first, or pass --ros-distro <name>."
   exit 1
+fi
+
+if [[ -z "${WORLD_PATH}" ]]; then
+  WORLD_PATH="/opt/ros/${ROS_DISTRO_NAME}/share/bcr_arm_gazebo/worlds/empty.world"
 fi
 
 source_safe "/opt/ros/${ROS_DISTRO_NAME}/setup.bash"
