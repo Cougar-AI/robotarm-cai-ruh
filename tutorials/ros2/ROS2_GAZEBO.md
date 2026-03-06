@@ -126,12 +126,16 @@ sudo apt install -y \
 
 ## A.5 Source ROS and create workspace path
 
+Ubuntu `22.04` / `jammy`:
 ```bash
-echo "source /opt/ros/<humble-or-jazzy>/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-mkdir -p ~/robotarm-cai-ruh/software/ws_ros/src
+echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 ```
-
+Ubuntu `24.04` / `noble` (typical for newer WSL2 installs):
+```bash
+echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+```
+Navigate to software/ws_ros
 ## A.6 Validate install
 
 ```bash
@@ -179,11 +183,16 @@ $EDITOR software/ws_ros/src/custom_arm_description/urdf/custom_arm.urdf.xacro
 
 # 2) Build workspace
 cd software/ws_ros
-colcon build --symlink-install
+colcon build --symlink-install --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
 
 # 3) Source overlay
 source install/setup.bash
 ```
+
+Why force `/usr/bin/python3` here:
+1) ROS Debian packages install Python build modules for the system Python.
+2) On WSL2, Conda or user-local Python shims in `~/.local/bin` can be discovered first by CMake.
+3) If that happens, builds can fail with `ModuleNotFoundError: No module named 'catkin_pkg'` even though the ROS apt packages are installed correctly.
 
 ---
 
@@ -286,3 +295,13 @@ Non-blocking for basic planning and trajectory execution demos.
 
 3) EGL / `nvidia-drm` warnings in Gazebo GUI  
 Common on this Jetson setup and usually non-blocking for simulation/control.
+
+4) `ModuleNotFoundError: No module named 'catkin_pkg'` during `colcon build`  
+Cause: CMake found a non-system Python interpreter first, often from Conda or `~/.local/bin`.  
+Fix:
+
+```bash
+cd software/ws_ros
+colcon build --symlink-install --cmake-clean-cache \
+  --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
+```

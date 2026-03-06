@@ -175,7 +175,7 @@ XEOF
 
 if [[ "${BUILD_WS}" -eq 1 ]]; then
   echo "Building workspace: ${WS_DIR}"
-  (cd "${WS_DIR}" && colcon build --symlink-install)
+  (cd "${WS_DIR}" && colcon build --symlink-install --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3)
 fi
 
 echo "Workspace initialized at: ${WS_DIR}"
