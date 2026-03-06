@@ -314,8 +314,10 @@ Fix:
 sudo apt update
 sudo apt install --only-upgrade -y \
   ros-jazzy-controller-manager \
+  ros-jazzy-controller-manager-msgs \
   ros-jazzy-hardware-interface \
   ros-jazzy-ros2-control \
+  ros-jazzy-ros2-control-test-assets \
   ros-jazzy-ros2-controllers \
   ros-jazzy-gz-ros2-control
 ```
@@ -326,3 +328,7 @@ If many ROS packages are behind, do a full ROS/Ubuntu upgrade instead:
 sudo apt update
 sudo apt full-upgrade -y
 ```
+
+WSL2 RUN:
+pkill -9 -f "gz sim"
+to kill gazebo processes running previsouly. 
