@@ -125,6 +125,18 @@ cleanup() {
 }
 trap cleanup EXIT INT TERM
 
+startup_failed() {
+  local log_file="$1"
+
+  [[ -f "${log_file}" ]] || return 1
+
+  if grep -Eq 'undefined symbol:|Failed to load system plugin|No plugins detected in library' "${log_file}"; then
+    return 0
+  fi
+
+  return 1
+}
+
 ENV_CMD="set +u; source /opt/ros/${ROS_DISTRO_NAME}/setup.bash; set -u"
 if [[ -f "${WS_SETUP}" ]]; then
   ENV_CMD+=" && set +u; source '${WS_SETUP}'; set -u"
@@ -151,6 +163,13 @@ for ((i=1; i<=WAIT_TIMEOUT; i++)); do
   if (( i % 10 == 0 )); then
     echo "Waiting for controllers... (${i}s)"
   fi
+
+  if startup_failed "${LOG_FILE}"; then
+    echo "Simulation startup failed before controllers became ready."
+    echo "A Gazebo or ros2_control plugin failed to load. Check ${LOG_FILE}"
+    exit 1
+  fi
+
   sleep 1
 done
 

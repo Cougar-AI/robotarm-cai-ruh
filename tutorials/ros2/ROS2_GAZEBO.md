@@ -305,3 +305,24 @@ cd software/ws_ros
 colcon build --symlink-install --cmake-clean-cache \
   --cmake-args -DPython3_EXECUTABLE=/usr/bin/python3
 ```
+
+5) UR simulation launches Gazebo, but controllers never come up, so no scene assets, MoveIt, or RViz  
+Cause: `gz_ros2_control` failed to load, often because ROS package versions are out of sync after a partial upgrade. A typical log line is `undefined symbol` from `libgz_ros2_control-system.so`.  
+Fix:
+
+```bash
+sudo apt update
+sudo apt install --only-upgrade -y \
+  ros-jazzy-controller-manager \
+  ros-jazzy-hardware-interface \
+  ros-jazzy-ros2-control \
+  ros-jazzy-ros2-controllers \
+  ros-jazzy-gz-ros2-control
+```
+
+If many ROS packages are behind, do a full ROS/Ubuntu upgrade instead:
+
+```bash
+sudo apt update
+sudo apt full-upgrade -y
+```
