@@ -1,0 +1,39 @@
+{
+  "benchmark_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/builder_benchmark.urdf",
+  "base_scale": [
+    0.001,
+    0.001,
+    0.001
+  ],
+  "motor_scale": [
+    0.001,
+    0.001,
+    0.001
+  ],
+  "base_expected_origin": [
+    0.00012414300966421686,
+    0.00021448930692627953,
+    -0.010426321760890575
+  ],
+  "base_actual_origin": [
+    0.000124,
+    0.000214,
+    -0.010426
+  ],
+  "motor_expected_origin": [
+    5.1838614058525586e-12,
+    -0.00014144167175617224,
+    -0.025846809656717658
+  ],
+  "motor_actual_origin": [
+    0.0,
+    -0.000141,
+    -0.025847
+  ],
+  "scales_in_file": {
+    "base_mesh_link": "0.001 0.001 0.001",
+    "motor_mesh_link": "0.001 0.001 0.001"
+  },
+  "base_max_abs_err": 4.893069262795324e-07,
+  "motor_max_abs_err": 4.416717561722314e-07
+}

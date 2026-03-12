@@ -1,0 +1,6 @@
+source_file: /Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/builder_host.urdf
+kind: urdf
+model_name: builder_host
+links: 1
+joints: 0
+warnings: 0

@@ -1,0 +1,1730 @@
+{
+  "source_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/ur5e.xml",
+  "model_name": "ur5e",
+  "kind": "mjcf",
+  "link_count": 7,
+  "joint_count": 6,
+  "mesh_asset_count": 20,
+  "links": {
+    "base": {
+      "name": "base",
+      "parent": null,
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "meshes": [
+        {
+          "mesh_name": "base_0",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/base_0.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": "black",
+          "extra": {
+            "mesh": "base_0",
+            "material": "black",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "base_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/base_1.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": "jointgray",
+          "extra": {
+            "mesh": "base_1",
+            "material": "jointgray",
+            "class": "visual"
+          }
+        }
+      ],
+      "joints_out": [
+        "shoulder_pan_joint"
+      ],
+      "child_links": [
+        "shoulder_link"
+      ],
+      "inertial": {
+        "mass": "4.0",
+        "pos": "0 0 0",
+        "diaginertia": "0.00443333156 0.00443333156 0.0072"
+      },
+      "extra": {}
+    },
+    "shoulder_link": {
+      "name": "shoulder_link",
+      "parent": "base",
+      "world_pos": [
+        0.0,
+        0.0,
+        0.163
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "meshes": [
+        {
+          "mesh_name": "shoulder_0",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/shoulder_0.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": "urblue",
+          "extra": {
+            "mesh": "shoulder_0",
+            "material": "urblue",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "shoulder_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/shoulder_1.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": "black",
+          "extra": {
+            "mesh": "shoulder_1",
+            "material": "black",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "shoulder_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/shoulder_2.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": "jointgray",
+          "extra": {
+            "mesh": "shoulder_2",
+            "material": "jointgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            -0.04
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.123
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "size": "0.06 0.06",
+            "pos": "0 0 -0.04"
+          }
+        }
+      ],
+      "joints_out": [
+        "shoulder_lift_joint"
+      ],
+      "child_links": [
+        "upper_arm_link"
+      ],
+      "inertial": {
+        "mass": "3.7",
+        "pos": "0 0 0",
+        "diaginertia": "0.0102675 0.0102675 0.00666"
+      },
+      "extra": {}
+    },
+    "upper_arm_link": {
+      "name": "upper_arm_link",
+      "parent": "shoulder_link",
+      "world_pos": [
+        0.0,
+        -0.138,
+        0.163
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        -0.7071067811865474,
+        0.0,
+        0.7071067811865476
+      ],
+      "meshes": [
+        {
+          "mesh_name": "upperarm_0",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_0.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.138,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "linkgray",
+          "extra": {
+            "mesh": "upperarm_0",
+            "material": "linkgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "upperarm_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_1.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.138,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "black",
+          "extra": {
+            "mesh": "upperarm_1",
+            "material": "black",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "upperarm_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_2.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.138,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "jointgray",
+          "extra": {
+            "mesh": "upperarm_2",
+            "material": "jointgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "upperarm_3",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_3.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.138,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "urblue",
+          "extra": {
+            "mesh": "upperarm_3",
+            "material": "urblue",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            -0.04,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            0.7071067811865474,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.098,
+            0.163
+          ],
+          "world_quat_wxyz": [
+            0.49999999999999967,
+            -0.4999999999999999,
+            0.4999999999999999,
+            0.5000000000000001
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "pos": "0 -0.04 0",
+            "quat": "1 1 0 0",
+            "size": "0.06 0.06"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.2
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.19999999999999996,
+            -0.138,
+            0.16300000000000006
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "size": "0.05 0.2",
+            "pos": "0 0 0.2"
+          }
+        }
+      ],
+      "joints_out": [
+        "elbow_joint"
+      ],
+      "child_links": [
+        "forearm_link"
+      ],
+      "inertial": {
+        "mass": "8.393",
+        "pos": "0 0 0.2125",
+        "diaginertia": "0.133886 0.133886 0.0151074"
+      },
+      "extra": {}
+    },
+    "forearm_link": {
+      "name": "forearm_link",
+      "parent": "upper_arm_link",
+      "world_pos": [
+        -0.4249999999999999,
+        -0.007000000000000006,
+        0.1630000000000001
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        -0.7071067811865474,
+        0.0,
+        0.7071067811865476
+      ],
+      "meshes": [
+        {
+          "mesh_name": "forearm_0",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_0.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.4249999999999999,
+            -0.007000000000000006,
+            0.1630000000000001
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "urblue",
+          "extra": {
+            "mesh": "forearm_0",
+            "material": "urblue",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "forearm_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_1.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.4249999999999999,
+            -0.007000000000000006,
+            0.1630000000000001
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "linkgray",
+          "extra": {
+            "mesh": "forearm_1",
+            "material": "linkgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "forearm_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_2.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.4249999999999999,
+            -0.007000000000000006,
+            0.1630000000000001
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "black",
+          "extra": {
+            "mesh": "forearm_2",
+            "material": "black",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "forearm_3",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_3.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.4249999999999999,
+            -0.007000000000000006,
+            0.1630000000000001
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": "jointgray",
+          "extra": {
+            "mesh": "forearm_3",
+            "material": "jointgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.08,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            0.7071067811865474,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.4249999999999999,
+            -0.08700000000000001,
+            0.1630000000000001
+          ],
+          "world_quat_wxyz": [
+            0.49999999999999967,
+            -0.4999999999999999,
+            0.4999999999999999,
+            0.5000000000000001
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "pos": "0 0.08 0",
+            "quat": "1 1 0 0",
+            "size": "0.055 0.06"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.2
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.6249999999999998,
+            -0.007000000000000006,
+            0.16300000000000014
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            -0.7071067811865474,
+            0.0,
+            0.7071067811865476
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "size": "0.038 0.19",
+            "pos": "0 0 0.2"
+          }
+        }
+      ],
+      "joints_out": [
+        "wrist_1_joint"
+      ],
+      "child_links": [
+        "wrist_1_link"
+      ],
+      "inertial": {
+        "mass": "2.275",
+        "pos": "0 0 0.196",
+        "diaginertia": "0.0311796 0.0311796 0.004095"
+      },
+      "extra": {}
+    },
+    "wrist_1_link": {
+      "name": "wrist_1_link",
+      "parent": "forearm_link",
+      "world_pos": [
+        -0.8169999999999997,
+        -0.007000000000000006,
+        0.16300000000000017
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        0.9999999999999999,
+        0.0,
+        -2.2204460492503128e-16
+      ],
+      "meshes": [
+        {
+          "mesh_name": "wrist1_0",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist1_0.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.007000000000000006,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "black",
+          "extra": {
+            "mesh": "wrist1_0",
+            "material": "black",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "wrist1_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist1_1.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.007000000000000006,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "urblue",
+          "extra": {
+            "mesh": "wrist1_1",
+            "material": "urblue",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "wrist1_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist1_2.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.007000000000000006,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "jointgray",
+          "extra": {
+            "mesh": "wrist1_2",
+            "material": "jointgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.05,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            0.7071067811865474,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.05700000000000001,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865474,
+            -0.7071067811865474,
+            1.5700924586837747e-16,
+            1.5700924586837747e-16
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "pos": "0 0.05 0",
+            "quat": "1 1 0 0",
+            "size": "0.04 0.07"
+          }
+        }
+      ],
+      "joints_out": [
+        "wrist_2_joint"
+      ],
+      "child_links": [
+        "wrist_2_link"
+      ],
+      "inertial": {
+        "mass": "1.219",
+        "pos": "0 0.127 0",
+        "diaginertia": "0.0025599 0.0025599 0.0021942"
+      },
+      "extra": {}
+    },
+    "wrist_2_link": {
+      "name": "wrist_2_link",
+      "parent": "wrist_1_link",
+      "world_pos": [
+        -0.8169999999999997,
+        -0.134,
+        0.16300000000000017
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        0.9999999999999999,
+        0.0,
+        -2.2204460492503128e-16
+      ],
+      "meshes": [
+        {
+          "mesh_name": "wrist2_0",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist2_0.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.134,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "black",
+          "extra": {
+            "mesh": "wrist2_0",
+            "material": "black",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "wrist2_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist2_1.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.134,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "urblue",
+          "extra": {
+            "mesh": "wrist2_1",
+            "material": "urblue",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "wrist2_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist2_2.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.134,
+            0.16300000000000017
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "jointgray",
+          "extra": {
+            "mesh": "wrist2_2",
+            "material": "jointgray",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.04
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.134,
+            0.12300000000000019
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "size": "0.04 0.06",
+            "pos": "0 0 0.04"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.02,
+            0.1
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            0.7071067811865474,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.154,
+            0.06300000000000021
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865474,
+            -0.7071067811865474,
+            1.5700924586837747e-16,
+            1.5700924586837747e-16
+          ],
+          "material": null,
+          "extra": {
+            "class": "collision",
+            "pos": "0 0.02 0.1",
+            "quat": "1 1 0 0",
+            "size": "0.04 0.04"
+          }
+        }
+      ],
+      "joints_out": [
+        "wrist_3_joint"
+      ],
+      "child_links": [
+        "wrist_3_link"
+      ],
+      "inertial": {
+        "mass": "1.219",
+        "pos": "0 0 0.1",
+        "diaginertia": "0.0025599 0.0025599 0.0021942"
+      },
+      "extra": {}
+    },
+    "wrist_3_link": {
+      "name": "wrist_3_link",
+      "parent": "wrist_2_link",
+      "world_pos": [
+        -0.8169999999999997,
+        -0.134,
+        0.06300000000000021
+      ],
+      "world_quat_wxyz": [
+        0.0,
+        0.9999999999999999,
+        0.0,
+        -2.2204460492503128e-16
+      ],
+      "meshes": [
+        {
+          "mesh_name": "wrist3",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist3.obj",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.134,
+            0.06300000000000021
+          ],
+          "world_quat_wxyz": [
+            0.0,
+            0.9999999999999999,
+            0.0,
+            -2.2204460492503128e-16
+          ],
+          "material": "linkgray",
+          "extra": {
+            "material": "linkgray",
+            "mesh": "wrist3",
+            "class": "visual"
+          }
+        },
+        {
+          "mesh_name": "geom",
+          "mesh_file": null,
+          "visual_or_collision": "collision",
+          "geom_type": "unknown",
+          "mesh_scale": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "local_pos": [
+            0.0,
+            0.08,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            0.7071067811865474,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            -0.8169999999999997,
+            -0.21400000000000002,
+            0.06300000000000021
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865474,
+            -0.7071067811865474,
+            1.5700924586837747e-16,
+            1.5700924586837747e-16
+          ],
+          "material": null,
+          "extra": {
+            "class": "eef_collision",
+            "pos": "0 0.08 0",
+            "quat": "1 1 0 0",
+            "size": "0.04 0.02"
+          }
+        }
+      ],
+      "joints_out": [],
+      "child_links": [],
+      "inertial": {
+        "mass": "0.1889",
+        "pos": "0 0.0771683 0",
+        "quat": "1 0 0 1",
+        "diaginertia": "0.000132134 9.90863e-05 9.90863e-05"
+      },
+      "extra": {}
+    }
+  },
+  "joints": {
+    "shoulder_pan_joint": {
+      "name": "shoulder_pan_joint",
+      "joint_type": "hinge",
+      "parent": "base",
+      "child": "shoulder_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "origin_world": [
+        0.0,
+        0.0,
+        0.163
+      ],
+      "origin_local": [
+        0.0,
+        0.0,
+        0.163
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "limits": {},
+      "extra": {
+        "class": "size3"
+      }
+    },
+    "shoulder_lift_joint": {
+      "name": "shoulder_lift_joint",
+      "joint_type": "hinge",
+      "parent": "shoulder_link",
+      "child": "upper_arm_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        -0.9999999999999998,
+        0.0,
+        2.220446049250313e-16
+      ],
+      "origin_world": [
+        0.0,
+        -0.138,
+        0.163
+      ],
+      "origin_local": [
+        0.0,
+        0.138,
+        0.0
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        0.0,
+        -0.7071067811865474,
+        0.0,
+        0.7071067811865476
+      ],
+      "limits": {},
+      "extra": {
+        "class": "size3"
+      }
+    },
+    "elbow_joint": {
+      "name": "elbow_joint",
+      "joint_type": "hinge",
+      "parent": "upper_arm_link",
+      "child": "forearm_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        -0.9999999999999998,
+        0.0,
+        2.220446049250313e-16
+      ],
+      "origin_world": [
+        -0.4249999999999999,
+        -0.007000000000000006,
+        0.1630000000000001
+      ],
+      "origin_local": [
+        0.0,
+        -0.131,
+        0.425
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        0.0,
+        -0.7071067811865474,
+        0.0,
+        0.7071067811865476
+      ],
+      "limits": {},
+      "extra": {
+        "class": "size3_limited"
+      }
+    },
+    "wrist_1_joint": {
+      "name": "wrist_1_joint",
+      "joint_type": "hinge",
+      "parent": "forearm_link",
+      "child": "wrist_1_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        -4.440892098500625e-16,
+        0.0,
+        -0.9999999999999996
+      ],
+      "origin_world": [
+        -0.8169999999999997,
+        -0.007000000000000006,
+        0.16300000000000017
+      ],
+      "origin_local": [
+        0.0,
+        0.0,
+        0.392
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        0.0,
+        0.9999999999999999,
+        0.0,
+        -2.2204460492503128e-16
+      ],
+      "limits": {},
+      "extra": {
+        "class": "size1"
+      }
+    },
+    "wrist_2_joint": {
+      "name": "wrist_2_joint",
+      "joint_type": "hinge",
+      "parent": "wrist_1_link",
+      "child": "wrist_2_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        -4.440892098500625e-16,
+        0.0,
+        -0.9999999999999996
+      ],
+      "origin_world": [
+        -0.8169999999999997,
+        -0.134,
+        0.16300000000000017
+      ],
+      "origin_local": [
+        0.0,
+        0.127,
+        0.0
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        0.0,
+        0.9999999999999999,
+        0.0,
+        -2.2204460492503128e-16
+      ],
+      "limits": {},
+      "extra": {
+        "class": "size1"
+      }
+    },
+    "wrist_3_joint": {
+      "name": "wrist_3_joint",
+      "joint_type": "hinge",
+      "parent": "wrist_2_link",
+      "child": "wrist_3_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        -4.440892098500625e-16,
+        0.0,
+        -0.9999999999999996
+      ],
+      "origin_world": [
+        -0.8169999999999997,
+        -0.134,
+        0.06300000000000021
+      ],
+      "origin_local": [
+        0.0,
+        0.0,
+        0.1
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        0.0,
+        0.9999999999999999,
+        0.0,
+        -2.2204460492503128e-16
+      ],
+      "limits": {},
+      "extra": {
+        "class": "size1"
+      }
+    }
+  },
+  "mesh_assets": {
+    "base_0": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/base_0.obj",
+    "base_1": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/base_1.obj",
+    "shoulder_0": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/shoulder_0.obj",
+    "shoulder_1": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/shoulder_1.obj",
+    "shoulder_2": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/shoulder_2.obj",
+    "upperarm_0": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_0.obj",
+    "upperarm_1": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_1.obj",
+    "upperarm_2": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_2.obj",
+    "upperarm_3": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/upperarm_3.obj",
+    "forearm_0": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_0.obj",
+    "forearm_1": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_1.obj",
+    "forearm_2": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_2.obj",
+    "forearm_3": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/forearm_3.obj",
+    "wrist1_0": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist1_0.obj",
+    "wrist1_1": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist1_1.obj",
+    "wrist1_2": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist1_2.obj",
+    "wrist2_0": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist2_0.obj",
+    "wrist2_1": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist2_1.obj",
+    "wrist2_2": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist2_2.obj",
+    "wrist3": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/mujoco_menagerie/universal_robots_ur5e/assets/wrist3.obj"
+  },
+  "mesh_asset_scales": {
+    "base_0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "base_1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shoulder_0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shoulder_1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "shoulder_2": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "upperarm_0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "upperarm_1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "upperarm_2": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "upperarm_3": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "forearm_0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "forearm_1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "forearm_2": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "forearm_3": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist1_0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist1_1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist1_2": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist2_0": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist2_1": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist2_2": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "wrist3": [
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "warnings": [],
+  "notes": [
+    "UR5e uses a standard base -> shoulder -> upper arm -> forearm -> wrist_1 -> wrist_2 -> wrist_3 serial chain.",
+    "One kinematic link can own multiple visual meshes; mesh count is not expected to match joint count.",
+    "Serial articulated robots are usually modeled as one mechanical DoF per non-fixed joint stage."
+  ],
+  "xml_source": "<mujoco model=\"ur5e\">\n  <compiler angle=\"radian\" meshdir=\"assets\" autolimits=\"true\"/>\n\n  <option integrator=\"implicitfast\"/>\n\n  <default>\n    <default class=\"ur5e\">\n      <material specular=\"0.5\" shininess=\"0.25\"/>\n      <joint axis=\"0 1 0\" range=\"-6.28319 6.28319\" armature=\"0.1\"/>\n      <general gaintype=\"fixed\" biastype=\"affine\" ctrlrange=\"-6.2831 6.2831\" gainprm=\"2000\" biasprm=\"0 -2000 -400\"\n        forcerange=\"-150 150\"/>\n      <default class=\"size3\">\n        <default class=\"size3_limited\">\n          <joint range=\"-3.1415 3.1415\"/>\n          <general ctrlrange=\"-3.1415 3.1415\"/>\n        </default>\n      </default>\n      <default class=\"size1\">\n        <general gainprm=\"500\" biasprm=\"0 -500 -100\" forcerange=\"-28 28\"/>\n      </default>\n      <default class=\"visual\">\n        <geom type=\"mesh\" contype=\"0\" conaffinity=\"0\" group=\"2\"/>\n      </default>\n      <default class=\"collision\">\n        <geom type=\"capsule\" group=\"3\"/>\n        <default class=\"eef_collision\">\n          <geom type=\"cylinder\"/>\n        </default>\n      </default>\n      <site size=\"0.001\" rgba=\"0.5 0.5 0.5 0.3\" group=\"4\"/>\n    </default>\n  </default>\n\n  <asset>\n    <material class=\"ur5e\" name=\"black\" rgba=\"0.033 0.033 0.033 1\"/>\n    <material class=\"ur5e\" name=\"jointgray\" rgba=\"0.278 0.278 0.278 1\"/>\n    <material class=\"ur5e\" name=\"linkgray\" rgba=\"0.82 0.82 0.82 1\"/>\n    <material class=\"ur5e\" name=\"urblue\" rgba=\"0.49 0.678 0.8 1\"/>\n\n    <mesh file=\"base_0.obj\"/>\n    <mesh file=\"base_1.obj\"/>\n    <mesh file=\"shoulder_0.obj\"/>\n    <mesh file=\"shoulder_1.obj\"/>\n    <mesh file=\"shoulder_2.obj\"/>\n    <mesh file=\"upperarm_0.obj\"/>\n    <mesh file=\"upperarm_1.obj\"/>\n    <mesh file=\"upperarm_2.obj\"/>\n    <mesh file=\"upperarm_3.obj\"/>\n    <mesh file=\"forearm_0.obj\"/>\n    <mesh file=\"forearm_1.obj\"/>\n    <mesh file=\"forearm_2.obj\"/>\n    <mesh file=\"forearm_3.obj\"/>\n    <mesh file=\"wrist1_0.obj\"/>\n    <mesh file=\"wrist1_1.obj\"/>\n    <mesh file=\"wrist1_2.obj\"/>\n    <mesh file=\"wrist2_0.obj\"/>\n    <mesh file=\"wrist2_1.obj\"/>\n    <mesh file=\"wrist2_2.obj\"/>\n    <mesh file=\"wrist3.obj\"/>\n  </asset>\n\n  <worldbody>\n    <light name=\"spotlight\" mode=\"targetbodycom\" target=\"wrist_2_link\" pos=\"0 -1 2\"/>\n    <body name=\"base\" quat=\"0 0 0 -1\" childclass=\"ur5e\">\n      <inertial mass=\"4.0\" pos=\"0 0 0\" diaginertia=\"0.00443333156 0.00443333156 0.0072\"/>\n      <geom mesh=\"base_0\" material=\"black\" class=\"visual\"/>\n      <geom mesh=\"base_1\" material=\"jointgray\" class=\"visual\"/>\n      <body name=\"shoulder_link\" pos=\"0 0 0.163\">\n        <inertial mass=\"3.7\" pos=\"0 0 0\" diaginertia=\"0.0102675 0.0102675 0.00666\"/>\n        <joint name=\"shoulder_pan_joint\" class=\"size3\" axis=\"0 0 1\"/>\n        <geom mesh=\"shoulder_0\" material=\"urblue\" class=\"visual\"/>\n        <geom mesh=\"shoulder_1\" material=\"black\" class=\"visual\"/>\n        <geom mesh=\"shoulder_2\" material=\"jointgray\" class=\"visual\"/>\n        <geom class=\"collision\" size=\"0.06 0.06\" pos=\"0 0 -0.04\"/>\n        <body name=\"upper_arm_link\" pos=\"0 0.138 0\" quat=\"1 0 1 0\">\n          <inertial mass=\"8.393\" pos=\"0 0 0.2125\" diaginertia=\"0.133886 0.133886 0.0151074\"/>\n          <joint name=\"shoulder_lift_joint\" class=\"size3\"/>\n          <geom mesh=\"upperarm_0\" material=\"linkgray\" class=\"visual\"/>\n          <geom mesh=\"upperarm_1\" material=\"black\" class=\"visual\"/>\n          <geom mesh=\"upperarm_2\" material=\"jointgray\" class=\"visual\"/>\n          <geom mesh=\"upperarm_3\" material=\"urblue\" class=\"visual\"/>\n          <geom class=\"collision\" pos=\"0 -0.04 0\" quat=\"1 1 0 0\" size=\"0.06 0.06\"/>\n          <geom class=\"collision\" size=\"0.05 0.2\" pos=\"0 0 0.2\"/>\n          <body name=\"forearm_link\" pos=\"0 -0.131 0.425\">\n            <inertial mass=\"2.275\" pos=\"0 0 0.196\" diaginertia=\"0.0311796 0.0311796 0.004095\"/>\n            <joint name=\"elbow_joint\" class=\"size3_limited\"/>\n            <geom mesh=\"forearm_0\" material=\"urblue\" class=\"visual\"/>\n            <geom mesh=\"forearm_1\" material=\"linkgray\" class=\"visual\"/>\n            <geom mesh=\"forearm_2\" material=\"black\" class=\"visual\"/>\n            <geom mesh=\"forearm_3\" material=\"jointgray\" class=\"visual\"/>\n            <geom class=\"collision\" pos=\"0 0.08 0\" quat=\"1 1 0 0\" size=\"0.055 0.06\"/>\n            <geom class=\"collision\" size=\"0.038 0.19\" pos=\"0 0 0.2\"/>\n            <body name=\"wrist_1_link\" pos=\"0 0 0.392\" quat=\"1 0 1 0\">\n              <inertial mass=\"1.219\" pos=\"0 0.127 0\" diaginertia=\"0.0025599 0.0025599 0.0021942\"/>\n              <joint name=\"wrist_1_joint\" class=\"size1\"/>\n              <geom mesh=\"wrist1_0\" material=\"black\" class=\"visual\"/>\n              <geom mesh=\"wrist1_1\" material=\"urblue\" class=\"visual\"/>\n              <geom mesh=\"wrist1_2\" material=\"jointgray\" class=\"visual\"/>\n              <geom class=\"collision\" pos=\"0 0.05 0\" quat=\"1 1 0 0\" size=\"0.04 0.07\"/>\n              <body name=\"wrist_2_link\" pos=\"0 0.127 0\">\n                <inertial mass=\"1.219\" pos=\"0 0 0.1\" diaginertia=\"0.0025599 0.0025599 0.0021942\"/>\n                <joint name=\"wrist_2_joint\" axis=\"0 0 1\" class=\"size1\"/>\n                <geom mesh=\"wrist2_0\" material=\"black\" class=\"visual\"/>\n                <geom mesh=\"wrist2_1\" material=\"urblue\" class=\"visual\"/>\n                <geom mesh=\"wrist2_2\" material=\"jointgray\" class=\"visual\"/>\n                <geom class=\"collision\" size=\"0.04 0.06\" pos=\"0 0 0.04\"/>\n                <geom class=\"collision\" pos=\"0 0.02 0.1\" quat=\"1 1 0 0\" size=\"0.04 0.04\"/>\n                <body name=\"wrist_3_link\" pos=\"0 0 0.1\">\n                  <inertial mass=\"0.1889\" pos=\"0 0.0771683 0\" quat=\"1 0 0 1\"\n                    diaginertia=\"0.000132134 9.90863e-05 9.90863e-05\"/>\n                  <joint name=\"wrist_3_joint\" class=\"size1\"/>\n                  <geom material=\"linkgray\" mesh=\"wrist3\" class=\"visual\"/>\n                  <geom class=\"eef_collision\" pos=\"0 0.08 0\" quat=\"1 1 0 0\" size=\"0.04 0.02\"/>\n                  <site name=\"attachment_site\" pos=\"0 0.1 0\" quat=\"-1 1 0 0\"/>\n                </body>\n              </body>\n            </body>\n          </body>\n        </body>\n      </body>\n    </body>\n  </worldbody>\n\n  <actuator>\n    <general class=\"size3\" name=\"shoulder_pan\" joint=\"shoulder_pan_joint\"/>\n    <general class=\"size3\" name=\"shoulder_lift\" joint=\"shoulder_lift_joint\"/>\n    <general class=\"size3_limited\" name=\"elbow\" joint=\"elbow_joint\"/>\n    <general class=\"size1\" name=\"wrist_1\" joint=\"wrist_1_joint\"/>\n    <general class=\"size1\" name=\"wrist_2\" joint=\"wrist_2_joint\"/>\n    <general class=\"size1\" name=\"wrist_3\" joint=\"wrist_3_joint\"/>\n  </actuator>\n\n  <keyframe>\n    <key name=\"home\" qpos=\"-1.5708 -1.5708 1.5708 -1.5708 -1.5708 0\" ctrl=\"-1.5708 -1.5708 1.5708 -1.5708 -1.5708 0\"/>\n  </keyframe>\n</mujoco>\n",
+  "viewer_settings": {
+    "mesh_mode": "full",
+    "max_faces_per_mesh": 50000,
+    "max_points_per_mesh": 4000
+  }
+}

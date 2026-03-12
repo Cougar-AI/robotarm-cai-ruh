@@ -1,0 +1,1649 @@
+{
+  "source_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/Arm.urdf",
+  "model_name": "Arm",
+  "kind": "urdf",
+  "link_count": 7,
+  "joint_count": 6,
+  "mesh_asset_count": 0,
+  "links": {
+    "Base_Joint": {
+      "name": "Base_Joint",
+      "parent": null,
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Base_Joint",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Base_Joint.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Base_Joint.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Base_Joint",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Base_Joint.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Base_Joint.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "Base_Joint_Joint1"
+      ],
+      "child_links": [
+        "Joint_1"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Joint_1": {
+      "name": "Joint_1",
+      "parent": "Base_Joint",
+      "world_pos": [
+        -2.1371793224034304e-17,
+        5.906294567565221e-81,
+        0.1702
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        2.209400494351195e-32,
+        -3.0529422591192093e-96,
+        -1.381796676032575e-64
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Joint_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_1.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            1.8135215551495786e-16,
+            -3.114430069089761e-18,
+            -0.020600000000000344
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            -4.329780281177467e-17,
+            -0.7071067811865475,
+            -4.329780281177467e-17
+          ],
+          "world_pos": [
+            1.5998036229092356e-16,
+            -3.11443006908976e-18,
+            0.14959999999999965
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865476,
+            -4.3297802811774664e-17,
+            -0.7071067811865475,
+            -4.329780281177469e-17
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_1.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Joint_1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_1.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            1.8135215551495786e-16,
+            -3.114430069089761e-18,
+            -0.020600000000000344
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865476,
+            -4.329780281177467e-17,
+            -0.7071067811865475,
+            -4.329780281177467e-17
+          ],
+          "world_pos": [
+            1.5998036229092356e-16,
+            -3.11443006908976e-18,
+            0.14959999999999965
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865476,
+            -4.3297802811774664e-17,
+            -0.7071067811865475,
+            -4.329780281177469e-17
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_1.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "Joint_1_Joint2"
+      ],
+      "child_links": [
+        "Joint_2"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Joint_2": {
+      "name": "Joint_2",
+      "parent": "Joint_1",
+      "world_pos": [
+        -0.17020000000000002,
+        3.4211388289180104e-49,
+        0.1374
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        6.123233995736749e-17,
+        -2.465190328815662e-32,
+        1.5094937227365515e-48
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Joint_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_2.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.020499999999999137,
+            8.101913789418598e-17,
+            -3.375077994860476e-16
+          ],
+          "local_quat_wxyz": [
+            2.0816681711724847e-17,
+            6.123233995736766e-17,
+            1.0,
+            -6.123233995736766e-17
+          ],
+          "world_pos": [
+            -0.1497000000000009,
+            8.101913789418602e-17,
+            0.13739999999999966
+          ],
+          "world_quat_wxyz": [
+            2.0816681711724868e-17,
+            6.123233995736766e-17,
+            1.0,
+            -1.7256332301709633e-31
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_2.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Joint_2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_2.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.020499999999999137,
+            8.101913789418598e-17,
+            -3.375077994860476e-16
+          ],
+          "local_quat_wxyz": [
+            2.0816681711724847e-17,
+            6.123233995736766e-17,
+            1.0,
+            -6.123233995736766e-17
+          ],
+          "world_pos": [
+            -0.1497000000000009,
+            8.101913789418602e-17,
+            0.13739999999999966
+          ],
+          "world_quat_wxyz": [
+            2.0816681711724868e-17,
+            6.123233995736766e-17,
+            1.0,
+            -1.7256332301709633e-31
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_2.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "Joint_2_Joint3"
+      ],
+      "child_links": [
+        "Joint_3"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Joint_3": {
+      "name": "Joint_3",
+      "parent": "Joint_2",
+      "world_pos": [
+        -0.1415,
+        0.0,
+        0.4074
+      ],
+      "world_quat_wxyz": [
+        1.2202069588947346e-31,
+        0.7071067811865476,
+        -8.65956056235492e-17,
+        0.7071067811865475
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Joint_3",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_3.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            -3.552713678800501e-16,
+            -6.863216838266077e-17,
+            -0.008200000000001992
+          ],
+          "local_quat_wxyz": [
+            4.329780281177468e-17,
+            0.7071067811865477,
+            4.329780281177466e-17,
+            -0.7071067811865474
+          ],
+          "world_pos": [
+            -0.14970000000000197,
+            6.963637875796188e-17,
+            0.40739999999999965
+          ],
+          "world_quat_wxyz": [
+            -3.6368307736623075e-16,
+            6.123233995736767e-17,
+            1.0,
+            1.2246467991473517e-16
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_3.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Joint_3",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_3.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            -3.552713678800501e-16,
+            -6.863216838266077e-17,
+            -0.008200000000001992
+          ],
+          "local_quat_wxyz": [
+            4.329780281177468e-17,
+            0.7071067811865477,
+            4.329780281177466e-17,
+            -0.7071067811865474
+          ],
+          "world_pos": [
+            -0.14970000000000197,
+            6.963637875796188e-17,
+            0.40739999999999965
+          ],
+          "world_quat_wxyz": [
+            -3.6368307736623075e-16,
+            6.123233995736767e-17,
+            1.0,
+            1.2246467991473517e-16
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_3.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "Joint_3_Joint4"
+      ],
+      "child_links": [
+        "Joint_4"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Joint_4": {
+      "name": "Joint_4",
+      "parent": "Joint_3",
+      "world_pos": [
+        0.037000000000000116,
+        -1.8308469647252767e-17,
+        0.7354
+      ],
+      "world_quat_wxyz": [
+        0.7071067811865476,
+        2.003070486801521e-16,
+        -0.7071067811865475,
+        1.1371144305660296e-16
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Joint_4",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_4.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            -0.7555,
+            2.0953285269679403e-16,
+            0.03600000000000129
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865477,
+            4.3297802811774393e-17,
+            0.7071067811865474,
+            -4.329780281177437e-17
+          ],
+          "world_pos": [
+            0.0009999999999986131,
+            2.677592371705207e-16,
+            -0.020099999999999896
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            1.224646799147348e-16,
+            -8.040613248383184e-17,
+            2.220446049250313e-16
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_4.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Joint_4",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_4.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            -0.7555,
+            2.0953285269679403e-16,
+            0.03600000000000129
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865477,
+            4.3297802811774393e-17,
+            0.7071067811865474,
+            -4.329780281177437e-17
+          ],
+          "world_pos": [
+            0.0009999999999986131,
+            2.677592371705207e-16,
+            -0.020099999999999896
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            1.224646799147348e-16,
+            -8.040613248383184e-17,
+            2.220446049250313e-16
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_4.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "Joint_4_Joint5"
+      ],
+      "child_links": [
+        "Joint_5"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Joint_5": {
+      "name": "Joint_5",
+      "parent": "Joint_4",
+      "world_pos": [
+        -0.06449999999999989,
+        -3.889058846408702e-17,
+        0.7384000000000001
+      ],
+      "world_quat_wxyz": [
+        -3.4450928483976655e-16,
+        1.0,
+        2.220446049250313e-16,
+        -2.5922262378547223e-32
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Joint_5",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_5.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            -2.815525590449397e-15,
+            -2.2958546744933583e-16,
+            0.05200000000000131
+          ],
+          "local_quat_wxyz": [
+            1.0058038261205359e-14,
+            0.7071067811865478,
+            -0.7071067811865472,
+            -1.0125740815570513e-14
+          ],
+          "world_pos": [
+            -0.06450000000000271,
+            2.2652384460858416e-16,
+            0.6863999999999988
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865477,
+            -9.814433409713429e-15,
+            -1.036934566706244e-14,
+            0.7071067811865474
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_5.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Joint_5",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_5.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            -2.815525590449397e-15,
+            -2.2958546744933583e-16,
+            0.05200000000000131
+          ],
+          "local_quat_wxyz": [
+            1.0058038261205359e-14,
+            0.7071067811865478,
+            -0.7071067811865472,
+            -1.0125740815570513e-14
+          ],
+          "world_pos": [
+            -0.06450000000000271,
+            2.2652384460858416e-16,
+            0.6863999999999988
+          ],
+          "world_quat_wxyz": [
+            0.7071067811865477,
+            -9.814433409713429e-15,
+            -1.036934566706244e-14,
+            0.7071067811865474
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_5.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "Joint_5_Revolute-10"
+      ],
+      "child_links": [
+        "Joint_6"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Joint_6": {
+      "name": "Joint_6",
+      "parent": "Joint_5",
+      "world_pos": [
+        -0.049499999999997005,
+        -6.487414010477034e-17,
+        0.8399
+      ],
+      "world_quat_wxyz": [
+        0.707106781186499,
+        0.7071067811865961,
+        1.5700924586838812e-16,
+        1.5700924586836667e-16
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Joint_6",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_6.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.025000000000003252,
+            -6.252776074688882e-15,
+            -2.309263891211763e-16
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865958,
+            -3.829517719415088e-14,
+            -0.7071067811864993,
+            -3.829517719414565e-14
+          ],
+          "world_pos": [
+            -0.024499999999993752,
+            1.7715447926351752e-16,
+            0.8398999999999938
+          ],
+          "world_quat_wxyz": [
+            0.500000000000027,
+            0.5000000000000415,
+            -0.49999999999990435,
+            -0.5000000000000272
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_6.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Joint_6",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_6.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.025000000000003252,
+            -6.252776074688882e-15,
+            -2.309263891211763e-16
+          ],
+          "local_quat_wxyz": [
+            0.7071067811865958,
+            -3.829517719415088e-14,
+            -0.7071067811864993,
+            -3.829517719414565e-14
+          ],
+          "world_pos": [
+            -0.024499999999993752,
+            1.7715447926351752e-16,
+            0.8398999999999938
+          ],
+          "world_quat_wxyz": [
+            0.500000000000027,
+            0.5000000000000415,
+            -0.49999999999990435,
+            -0.5000000000000272
+          ],
+          "material": null,
+          "extra": {
+            "filename": "meshes/Joint_6.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [],
+      "child_links": [],
+      "inertial": {},
+      "extra": {}
+    }
+  },
+  "joints": {
+    "Base_Joint_Joint1": {
+      "name": "Base_Joint_Joint1",
+      "joint_type": "continuous",
+      "parent": "Base_Joint",
+      "child": "Joint_1",
+      "axis_local": [
+        0.0,
+        4.41880098870239e-32,
+        1.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "origin_world": [
+        -2.1371793224034304e-17,
+        5.906294567565221e-81,
+        0.1702
+      ],
+      "origin_local": [
+        -2.1371793224034304e-17,
+        5.906294567565221e-81,
+        0.1702
+      ],
+      "rpy_local": [
+        4.41880098870239e-32,
+        -0.0,
+        -2.76359335206515e-64
+      ],
+      "quat_world_wxyz": [
+        1.0,
+        2.209400494351195e-32,
+        -3.0529422591192093e-96,
+        -1.381796676032575e-64
+      ],
+      "limits": {},
+      "extra": {}
+    },
+    "Joint_1_Joint2": {
+      "name": "Joint_1_Joint2",
+      "joint_type": "continuous",
+      "parent": "Joint_1",
+      "child": "Joint_2",
+      "axis_local": [
+        -1.0,
+        0.0,
+        1.80411241501588e-16
+      ],
+      "axis_world": [
+        -1.0,
+        -2.2094004943511927e-32,
+        1.8041124150158796e-16
+      ],
+      "origin_world": [
+        -0.17020000000000002,
+        3.4211388289180104e-49,
+        0.1374
+      ],
+      "origin_local": [
+        -0.1702,
+        -1.4493667242943834e-33,
+        -0.032799999999999996
+      ],
+      "rpy_local": [
+        1.2246467991473493e-16,
+        -4.930380657631324e-32,
+        2.1786370924620435e-63
+      ],
+      "quat_world_wxyz": [
+        1.0,
+        6.123233995736749e-17,
+        -2.465190328815662e-32,
+        1.5094937227365515e-48
+      ],
+      "limits": {},
+      "extra": {}
+    },
+    "Joint_2_Joint3": {
+      "name": "Joint_2_Joint3",
+      "joint_type": "continuous",
+      "parent": "Joint_2",
+      "child": "Joint_3",
+      "axis_local": [
+        2.465190328815662e-32,
+        2.449293598294708e-16,
+        -1.0
+      ],
+      "axis_world": [
+        -1.0,
+        -1.224646799147355e-16,
+        2.8327694488239893e-16
+      ],
+      "origin_world": [
+        -0.1415,
+        0.0,
+        0.4074
+      ],
+      "origin_local": [
+        0.028700000000000028,
+        3.3065463576978445e-17,
+        0.27
+      ],
+      "rpy_local": [
+        3.141592653589793,
+        -1.5707963267948963,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        1.2202069588947346e-31,
+        0.7071067811865476,
+        -8.65956056235492e-17,
+        0.7071067811865475
+      ],
+      "limits": {},
+      "extra": {}
+    },
+    "Joint_3_Joint4": {
+      "name": "Joint_3_Joint4",
+      "joint_type": "continuous",
+      "parent": "Joint_3",
+      "child": "Joint_4",
+      "axis_local": [
+        -2.465190328815662e-32,
+        -2.449293598294709e-16,
+        -1.0
+      ],
+      "axis_world": [
+        1.0,
+        1.9915985002059173e-16,
+        -2.8327694488239893e-16
+      ],
+      "origin_world": [
+        0.037000000000000116,
+        -1.8308469647252767e-17,
+        0.7354
+      ],
+      "origin_local": [
+        0.32800000000000007,
+        -4.3719890729560567e-17,
+        0.17850000000000002
+      ],
+      "rpy_local": [
+        -3.1415926535897927,
+        5.473822126268817e-48,
+        -2.465190328815662e-32
+      ],
+      "quat_world_wxyz": [
+        0.7071067811865476,
+        2.003070486801521e-16,
+        -0.7071067811865475,
+        1.1371144305660296e-16
+      ],
+      "limits": {},
+      "extra": {}
+    },
+    "Joint_4_Joint5": {
+      "name": "Joint_4_Joint5",
+      "joint_type": "continuous",
+      "parent": "Joint_4",
+      "child": "Joint_5",
+      "axis_local": [
+        6.162975822039155e-33,
+        3.67394039744207e-16,
+        1.0
+      ],
+      "axis_world": [
+        -3.2977958031148815e-32,
+        3.21624529935326e-16,
+        -1.0
+      ],
+      "origin_world": [
+        -0.06449999999999989,
+        -3.889058846408702e-17,
+        0.7384000000000001
+      ],
+      "origin_local": [
+        0.0029999999999999714,
+        2.4860330022691298e-17,
+        0.1015
+      ],
+      "rpy_local": [
+        -3.1415926535897927,
+        1.5707963267948963,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        -3.4450928483976655e-16,
+        1.0,
+        2.220446049250313e-16,
+        -2.5922262378547223e-32
+      ],
+      "limits": {},
+      "extra": {}
+    },
+    "Joint_5_Revolute-10": {
+      "name": "Joint_5_Revolute-10",
+      "joint_type": "continuous",
+      "parent": "Joint_5",
+      "child": "Joint_6",
+      "axis_local": [
+        1.0,
+        9.860761315262744e-32,
+        -2.4718775496072294e-14
+      ],
+      "axis_world": [
+        1.0,
+        2.5162864705922356e-14,
+        3.394379774258708e-27
+      ],
+      "origin_world": [
+        -0.049499999999997005,
+        -6.487414010477034e-17,
+        0.8399
+      ],
+      "origin_local": [
+        0.015000000000002888,
+        -3.7290495034036995e-17,
+        -0.10149999999999992
+      ],
+      "rpy_local": [
+        -1.57079632679476,
+        1.0477058897466574e-31,
+        2.722983357319059e-31
+      ],
+      "quat_world_wxyz": [
+        0.707106781186499,
+        0.7071067811865961,
+        1.5700924586838812e-16,
+        1.5700924586836667e-16
+      ],
+      "limits": {},
+      "extra": {}
+    }
+  },
+  "mesh_assets": {},
+  "mesh_asset_scales": {},
+  "mesh_metrics": {
+    "Base_Joint:Base_Joint:visual": {
+      "mesh_name": "Base_Joint",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Base_Joint.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.09,
+        -0.08999289703369141,
+        -0.02
+      ],
+      "bounds_max": [
+        0.0899715805053711,
+        0.08999289703369141,
+        0.1701999969482422
+      ],
+      "extents": [
+        0.1799715805053711,
+        0.17998579406738283,
+        0.1901999969482422
+      ],
+      "bbox_center": [
+        -1.4209747314447574e-05,
+        0.0,
+        0.0750999984741211
+      ],
+      "vertex_count": 5209,
+      "face_count": 11282,
+      "surface_centroid": [
+        -0.00014822361848645162,
+        -0.00016393520059994202,
+        0.03039970650533789
+      ],
+      "center_mass": [
+        -0.00032986260246372083,
+        -0.0003763719959274296,
+        0.029211194289453443
+      ],
+      "is_watertight": false,
+      "volume": 0.00048263061410689853,
+      "recommended_frame_origin": [
+        -0.00014822361848645162,
+        -0.00016393520059994202,
+        0.03039970650533789
+      ]
+    },
+    "Base_Joint:Base_Joint:collision": {
+      "mesh_name": "Base_Joint",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Base_Joint.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.09,
+        -0.08999289703369141,
+        -0.02
+      ],
+      "bounds_max": [
+        0.0899715805053711,
+        0.08999289703369141,
+        0.1701999969482422
+      ],
+      "extents": [
+        0.1799715805053711,
+        0.17998579406738283,
+        0.1901999969482422
+      ],
+      "bbox_center": [
+        -1.4209747314447574e-05,
+        0.0,
+        0.0750999984741211
+      ],
+      "vertex_count": 5209,
+      "face_count": 11282,
+      "surface_centroid": [
+        -0.00014822361848645162,
+        -0.00016393520059994202,
+        0.03039970650533789
+      ],
+      "center_mass": [
+        -0.00032986260246372083,
+        -0.0003763719959274296,
+        0.029211194289453443
+      ],
+      "is_watertight": false,
+      "volume": 0.00048263061410689853,
+      "recommended_frame_origin": [
+        -0.00014822361848645162,
+        -0.00016393520059994202,
+        0.03039970650533789
+      ]
+    },
+    "Joint_1:Joint_1:visual": {
+      "mesh_name": "Joint_1",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_1.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.06717757415771484,
+        -0.055,
+        -0.0625
+      ],
+      "bounds_max": [
+        0.051500000000000004,
+        0.055,
+        0.1701999969482422
+      ],
+      "extents": [
+        0.11867757415771485,
+        0.11,
+        0.2326999969482422
+      ],
+      "bbox_center": [
+        -0.00783878707885742,
+        0.0,
+        0.0538499984741211
+      ],
+      "vertex_count": 6364,
+      "face_count": 13888,
+      "surface_centroid": [
+        -0.002154444218971469,
+        -1.5631296283277348e-09,
+        0.027370861075817595
+      ],
+      "center_mass": [
+        0.008828629963239083,
+        5.047200322888625e-09,
+        0.019365295358816644
+      ],
+      "is_watertight": false,
+      "volume": 0.000620306486439528,
+      "recommended_frame_origin": [
+        -0.002154444218971469,
+        -1.5631296283277348e-09,
+        0.027370861075817595
+      ]
+    },
+    "Joint_1:Joint_1:collision": {
+      "mesh_name": "Joint_1",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_1.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.06717757415771484,
+        -0.055,
+        -0.0625
+      ],
+      "bounds_max": [
+        0.051500000000000004,
+        0.055,
+        0.1701999969482422
+      ],
+      "extents": [
+        0.11867757415771485,
+        0.11,
+        0.2326999969482422
+      ],
+      "bbox_center": [
+        -0.00783878707885742,
+        0.0,
+        0.0538499984741211
+      ],
+      "vertex_count": 6364,
+      "face_count": 13888,
+      "surface_centroid": [
+        -0.002154444218971469,
+        -1.5631296283277348e-09,
+        0.027370861075817595
+      ],
+      "center_mass": [
+        0.008828629963239083,
+        5.047200322888625e-09,
+        0.019365295358816644
+      ],
+      "is_watertight": false,
+      "volume": 0.000620306486439528,
+      "recommended_frame_origin": [
+        -0.002154444218971469,
+        -1.5631296283277348e-09,
+        0.027370861075817595
+      ]
+    },
+    "Joint_2:Joint_2:visual": {
+      "mesh_name": "Joint_2",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_2.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.06719384765625,
+        -0.055,
+        -0.3325
+      ],
+      "bounds_max": [
+        0.051500000000000004,
+        0.055,
+        0.0625
+      ],
+      "extents": [
+        0.11869384765625,
+        0.11,
+        0.395
+      ],
+      "bbox_center": [
+        -0.007846923828124998,
+        0.0,
+        -0.135
+      ],
+      "vertex_count": 9904,
+      "face_count": 21208,
+      "surface_centroid": [
+        -0.0021388087067178967,
+        4.8433080530200525e-11,
+        -0.13500000194641545
+      ],
+      "center_mass": [
+        0.009959498437780824,
+        1.592218432486746e-10,
+        -0.1350000033773432
+      ],
+      "is_watertight": false,
+      "volume": 0.001182173478439689,
+      "recommended_frame_origin": [
+        -0.0021388087067178967,
+        4.8433080530200525e-11,
+        -0.13500000194641545
+      ]
+    },
+    "Joint_2:Joint_2:collision": {
+      "mesh_name": "Joint_2",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_2.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.06719384765625,
+        -0.055,
+        -0.3325
+      ],
+      "bounds_max": [
+        0.051500000000000004,
+        0.055,
+        0.0625
+      ],
+      "extents": [
+        0.11869384765625,
+        0.11,
+        0.395
+      ],
+      "bbox_center": [
+        -0.007846923828124998,
+        0.0,
+        -0.135
+      ],
+      "vertex_count": 9904,
+      "face_count": 21208,
+      "surface_centroid": [
+        -0.0021388087067178967,
+        4.8433080530200525e-11,
+        -0.13500000194641545
+      ],
+      "center_mass": [
+        0.009959498437780824,
+        1.592218432486746e-10,
+        -0.1350000033773432
+      ],
+      "is_watertight": false,
+      "volume": 0.001182173478439689,
+      "recommended_frame_origin": [
+        -0.0021388087067178967,
+        4.8433080530200525e-11,
+        -0.13500000194641545
+      ]
+    },
+    "Joint_3:Joint_3:visual": {
+      "mesh_name": "Joint_3",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_3.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.24169999694824218,
+        -0.0525,
+        -0.3695
+      ],
+      "bounds_max": [
+        0.0205,
+        0.0525,
+        0.0525
+      ],
+      "extents": [
+        0.2621999969482422,
+        0.105,
+        0.422
+      ],
+      "bbox_center": [
+        -0.1105999984741211,
+        0.0,
+        -0.1585
+      ],
+      "vertex_count": 14394,
+      "face_count": 29338,
+      "surface_centroid": [
+        -0.160742532027759,
+        6.59354139691636e-08,
+        -0.14621976509400184
+      ],
+      "center_mass": [
+        -0.16360265869792354,
+        7.373348565805527e-07,
+        -0.15442436052631742
+      ],
+      "is_watertight": false,
+      "volume": 0.0008828509930558396,
+      "recommended_frame_origin": [
+        -0.160742532027759,
+        6.59354139691636e-08,
+        -0.14621976509400184
+      ]
+    },
+    "Joint_3:Joint_3:collision": {
+      "mesh_name": "Joint_3",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_3.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.24169999694824218,
+        -0.0525,
+        -0.3695
+      ],
+      "bounds_max": [
+        0.0205,
+        0.0525,
+        0.0525
+      ],
+      "extents": [
+        0.2621999969482422,
+        0.105,
+        0.422
+      ],
+      "bbox_center": [
+        -0.1105999984741211,
+        0.0,
+        -0.1585
+      ],
+      "vertex_count": 14394,
+      "face_count": 29338,
+      "surface_centroid": [
+        -0.160742532027759,
+        6.59354139691636e-08,
+        -0.14621976509400184
+      ],
+      "center_mass": [
+        -0.16360265869792354,
+        7.373348565805527e-07,
+        -0.15442436052631742
+      ],
+      "is_watertight": false,
+      "volume": 0.0008828509930558396,
+      "recommended_frame_origin": [
+        -0.160742532027759,
+        6.59354139691636e-08,
+        -0.14621976509400184
+      ]
+    },
+    "Joint_4:Joint_4:visual": {
+      "mesh_name": "Joint_4",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_4.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.107,
+        -0.035500000000000004,
+        0.7035
+      ],
+      "bounds_max": [
+        0.063,
+        0.035500000000000004,
+        0.8085
+      ],
+      "extents": [
+        0.16999999999999998,
+        0.07100000000000001,
+        0.10499999999999998
+      ],
+      "bbox_center": [
+        -0.022,
+        0.0,
+        0.756
+      ],
+      "vertex_count": 4368,
+      "face_count": 10096,
+      "surface_centroid": [
+        -0.04458727325429415,
+        1.5231170129011794e-08,
+        0.7505848078667698
+      ],
+      "center_mass": [
+        -0.04463390864810951,
+        2.521689897302207e-07,
+        0.7455431172513352
+      ],
+      "is_watertight": false,
+      "volume": 0.0002824449787080171,
+      "recommended_frame_origin": [
+        -0.04458727325429415,
+        1.5231170129011794e-08,
+        0.7505848078667698
+      ]
+    },
+    "Joint_4:Joint_4:collision": {
+      "mesh_name": "Joint_4",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_4.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.107,
+        -0.035500000000000004,
+        0.7035
+      ],
+      "bounds_max": [
+        0.063,
+        0.035500000000000004,
+        0.8085
+      ],
+      "extents": [
+        0.16999999999999998,
+        0.07100000000000001,
+        0.10499999999999998
+      ],
+      "bbox_center": [
+        -0.022,
+        0.0,
+        0.756
+      ],
+      "vertex_count": 4368,
+      "face_count": 10096,
+      "surface_centroid": [
+        -0.04458727325429415,
+        1.5231170129011794e-08,
+        0.7505848078667698
+      ],
+      "center_mass": [
+        -0.04463390864810951,
+        2.521689897302207e-07,
+        0.7455431172513352
+      ],
+      "is_watertight": false,
+      "volume": 0.0002824449787080171,
+      "recommended_frame_origin": [
+        -0.04458727325429415,
+        1.5231170129011794e-08,
+        0.7505848078667698
+      ]
+    },
+    "Joint_5:Joint_5:visual": {
+      "mesh_name": "Joint_5",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_5.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.035500000000000004,
+        -0.044,
+        0.025
+      ],
+      "bounds_max": [
+        0.035500000000000004,
+        0.035500000000000004,
+        0.1865
+      ],
+      "extents": [
+        0.07100000000000001,
+        0.0795,
+        0.1615
+      ],
+      "bbox_center": [
+        0.0,
+        -0.004249999999999997,
+        0.10575
+      ],
+      "vertex_count": 4717,
+      "face_count": 10020,
+      "surface_centroid": [
+        2.531227795072924e-08,
+        -0.006500188855756944,
+        0.12441483617387512
+      ],
+      "center_mass": [
+        3.353665441384732e-07,
+        -0.009797732860827912,
+        0.12875639279339543
+      ],
+      "is_watertight": false,
+      "volume": 0.00024901710136175534,
+      "recommended_frame_origin": [
+        2.531227795072924e-08,
+        -0.006500188855756944,
+        0.12441483617387512
+      ]
+    },
+    "Joint_5:Joint_5:collision": {
+      "mesh_name": "Joint_5",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_5.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.035500000000000004,
+        -0.044,
+        0.025
+      ],
+      "bounds_max": [
+        0.035500000000000004,
+        0.035500000000000004,
+        0.1865
+      ],
+      "extents": [
+        0.07100000000000001,
+        0.0795,
+        0.1615
+      ],
+      "bbox_center": [
+        0.0,
+        -0.004249999999999997,
+        0.10575
+      ],
+      "vertex_count": 4717,
+      "face_count": 10020,
+      "surface_centroid": [
+        2.531227795072924e-08,
+        -0.006500188855756944,
+        0.12441483617387512
+      ],
+      "center_mass": [
+        3.353665441384732e-07,
+        -0.009797732860827912,
+        0.12875639279339543
+      ],
+      "is_watertight": false,
+      "volume": 0.00024901710136175534,
+      "recommended_frame_origin": [
+        2.531227795072924e-08,
+        -0.006500188855756944,
+        0.12441483617387512
+      ]
+    },
+    "Joint_6:Joint_6:visual": {
+      "mesh_name": "Joint_6",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_6.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.018490686416625976,
+        -0.018497671127319336,
+        0.025
+      ],
+      "bounds_max": [
+        0.0185,
+        0.018497671127319336,
+        0.054
+      ],
+      "extents": [
+        0.03699068641662598,
+        0.03699534225463867,
+        0.028999999999999998
+      ],
+      "bbox_center": [
+        4.656791687011538e-06,
+        0.0,
+        0.0395
+      ],
+      "vertex_count": 732,
+      "face_count": 1460,
+      "surface_centroid": [
+        -4.2581409222043694e-11,
+        -1.7203100915679123e-19,
+        0.03918269301371328
+      ],
+      "center_mass": [
+        -4.599152963160362e-11,
+        -4.1745171596030104e-19,
+        0.0384639259517005
+      ],
+      "is_watertight": true,
+      "volume": 2.8896876305758987e-05,
+      "recommended_frame_origin": [
+        -4.599152963160362e-11,
+        -4.1745171596030104e-19,
+        0.0384639259517005
+      ]
+    },
+    "Joint_6:Joint_6:collision": {
+      "mesh_name": "Joint_6",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/meshes/Joint_6.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.018490686416625976,
+        -0.018497671127319336,
+        0.025
+      ],
+      "bounds_max": [
+        0.0185,
+        0.018497671127319336,
+        0.054
+      ],
+      "extents": [
+        0.03699068641662598,
+        0.03699534225463867,
+        0.028999999999999998
+      ],
+      "bbox_center": [
+        4.656791687011538e-06,
+        0.0,
+        0.0395
+      ],
+      "vertex_count": 732,
+      "face_count": 1460,
+      "surface_centroid": [
+        -4.2581409222043694e-11,
+        -1.7203100915679123e-19,
+        0.03918269301371328
+      ],
+      "center_mass": [
+        -4.599152963160362e-11,
+        -4.1745171596030104e-19,
+        0.0384639259517005
+      ],
+      "is_watertight": true,
+      "volume": 2.8896876305758987e-05,
+      "recommended_frame_origin": [
+        -4.599152963160362e-11,
+        -4.1745171596030104e-19,
+        0.0384639259517005
+      ]
+    }
+  },
+  "warnings": [],
+  "notes": [
+    "Serial articulated robots are usually modeled as one mechanical DoF per non-fixed joint stage."
+  ],
+  "xml_source": "<?xml version='1.0' encoding='utf-8'?>\n<robot name=\"Arm\">\n    <link name=\"Base_Joint\">\n        <inertial>\n            <origin xyz=\"-0.0003310449128054492 -0.0003765223630645357 0.02921561322874342\" rpy=\"0.0 0.0 0.0\" />\n            <mass value=\"3.7912246321328436\" />\n            <inertia ixx=\"0.016718197729505356\" iyy=\"0.016773295996113366\" izz=\"0.015482147635597354\" ixy=\"6.13173006759159e-05\" iyz=\"-5.455400244430662e-05\" ixz=\"-8.481328123311252e-06\" />\n        </inertial>\n        <visual name=\"Base_Joint_visual\">\n            <origin xyz=\"0.0 0.0 0.0\" rpy=\"0.0 0.0 0.0\" />\n            <geometry>\n                <mesh filename=\"meshes/Base_Joint.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Base_Joint_collision\">\n            <origin xyz=\"0.0 0.0 0.0\" rpy=\"0.0 0.0 0.0\" />\n            <geometry>\n                <mesh filename=\"meshes/Base_Joint.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <link name=\"Joint_1\">\n        <inertial>\n            <origin xyz=\"-0.019370483087286103 2.0092341870242748e-09 -0.011769686194449172\" rpy=\"0.0 -0.0 0.0\" />\n            <mass value=\"4.871605999709224\" />\n            <inertia ixx=\"0.007494196559477778\" iyy=\"0.015588399369424633\" izz=\"0.01573505373957174\" ixy=\"4.70430484746284e-10\" iyz=\"2.1070304575512857e-08\" ixz=\"-0.00209039905770324\" />\n        </inertial>\n        <visual name=\"Joint_1_visual\">\n            <origin xyz=\"1.8135215551495786e-16 -3.114430069089761e-18 -0.020600000000000344\" rpy=\"-1.2246467991473535e-16 -1.5707963267948966 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_1.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Joint_1_collision\">\n            <origin xyz=\"1.8135215551495786e-16 -3.114430069089761e-18 -0.020600000000000344\" rpy=\"-1.2246467991473535e-16 -1.5707963267948966 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_1.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <link name=\"Joint_2\">\n        <inertial>\n            <origin xyz=\"0.010537536455476974 2.720572263632458e-10 0.13499998658848616\" rpy=\"0.0 -0.0 0.0\" />\n            <mass value=\"9.284439575553945\" />\n            <inertia ixx=\"0.16097095897633706\" iyy=\"0.16045670355679564\" izz=\"0.015982867468748385\" ixy=\"1.0369654867973318e-09\" iyz=\"6.6249550612886284e-09\" ixz=\"-2.3443206000426166e-09\" />\n        </inertial>\n        <visual name=\"Joint_2_visual\">\n            <origin xyz=\"0.020499999999999137 8.101913789418598e-17 -3.375077994860476e-16\" rpy=\"-3.141592653589793 4.16333634234497e-17 3.141592653589793\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_2.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Joint_2_collision\">\n            <origin xyz=\"0.020499999999999137 8.101913789418598e-17 -3.375077994860476e-16\" rpy=\"-3.141592653589793 4.16333634234497e-17 3.141592653589793\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_2.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <link name=\"Joint_3\">\n        <inertial>\n            <origin xyz=\"0.15442154453527984 -6.253155530411521e-08 0.15540372485759635\" rpy=\"3.0385816786431356e-64 -0.0 0.0\" />\n            <mass value=\"6.934631122481834\" />\n            <inertia ixx=\"0.029728037669338132\" iyy=\"0.14670435561028405\" izz=\"0.12713688200449358\" ixy=\"6.774462395267321e-09\" iyz=\"2.0078632407245e-08\" ixz=\"-0.03492075589757402\" />\n        </inertial>\n        <visual name=\"Joint_3_visual\">\n            <origin xyz=\"-3.552713678800501e-16 -6.863216838266077e-17 -0.008200000000001992\" rpy=\"3.141592653589793 1.5707963267948961 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_3.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Joint_3_collision\">\n            <origin xyz=\"-3.552713678800501e-16 -6.863216838266077e-17 -0.008200000000001992\" rpy=\"3.141592653589793 1.5707963267948961 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_3.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <link name=\"Joint_4\">\n        <inertial>\n            <origin xyz=\"-0.009960372227295693 -3.640367212779921e-08 0.0806268061978858\" rpy=\"6.0771633572862685e-64 -0.0 0.0\" />\n            <mass value=\"2.218185155323223\" />\n            <inertia ixx=\"0.004980923698500449\" iyy=\"0.005739371341262567\" izz=\"0.0022415081771851586\" ixy=\"-3.431824743601439e-10\" iyz=\"-1.448982043706971e-09\" ixz=\"0.0004792498057122885\" />\n        </inertial>\n        <visual name=\"Joint_4_visual\">\n            <origin xyz=\"-0.7555 2.0953285269679403e-16 0.03600000000000129\" rpy=\"1.224646799147345e-16 1.5707963267948961 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_4.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Joint_4_collision\">\n            <origin xyz=\"-0.7555 2.0953285269679403e-16 0.03600000000000129\" rpy=\"1.224646799147345e-16 1.5707963267948961 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_4.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <link name=\"Joint_5\">\n        <inertial>\n            <origin xyz=\"0.00979824184275059 1.2300669529823857e-06 -0.07674757335672397\" rpy=\"0.0 -6.842277657836021e-49 2.115572867540339e-49\" />\n            <mass value=\"1.9556605864311027\" />\n            <inertia ixx=\"0.004458540128476685\" iyy=\"0.004604512913203074\" izz=\"0.0014133128346417983\" ixy=\"2.3673460944059967e-08\" iyz=\"-2.1275621312016e-08\" ixz=\"0.0004887708448359525\" />\n        </inertial>\n        <visual name=\"Joint_5_visual\">\n            <origin xyz=\"-2.815525590449397e-15 -2.2958546744933583e-16 0.05200000000000131\" rpy=\"3.1415926535897647 9.574587059051675e-17 -1.5707963267948957\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_5.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Joint_5_collision\">\n            <origin xyz=\"-2.815525590449397e-15 -2.2958546744933583e-16 0.05200000000000131\" rpy=\"3.1415926535897647 9.574587059051675e-17 -1.5707963267948957\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_5.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <link name=\"Joint_6\">\n        <inertial>\n            <origin xyz=\"-0.013463555247715062 -2.1316282072803005e-15 -2.7730910080955826e-15\" rpy=\"0.0 -2.062701013372598e-47 0.0\" />\n            <mass value=\"0.22698446745157766\" />\n            <inertia ixx=\"3.880949332754624e-05\" iyy=\"3.31813067655076e-05\" izz=\"3.3181306765550644e-05\" ixy=\"1.7347234759761935e-18\" iyz=\"-3.3806524756398537e-20\" ixz=\"-5.437881366399838e-18\" />\n        </inertial>\n        <visual name=\"Joint_6_visual\">\n            <origin xyz=\"0.025000000000003252 -6.252776074688882e-15 -2.309263891211763e-16\" rpy=\"-1.0831511792289065e-13 -1.57079632679476 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_6.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </visual>\n        <collision name=\"Joint_6_collision\">\n            <origin xyz=\"0.025000000000003252 -6.252776074688882e-15 -2.309263891211763e-16\" rpy=\"-1.0831511792289065e-13 -1.57079632679476 0\" />\n            <geometry>\n                <mesh filename=\"meshes/Joint_6.stl\" scale=\"0.001 0.001 0.001\" />\n            </geometry>\n        </collision>\n    </link>\n    <joint name=\"Base_Joint_Joint1\" type=\"continuous\">\n        <origin xyz=\"-2.1371793224034304e-17 5.906294567565221e-81 0.1702\" rpy=\"4.41880098870239e-32 -0.0 -2.76359335206515e-64\" />\n        <parent link=\"Base_Joint\" />\n        <child link=\"Joint_1\" />\n        <axis xyz=\"0.0 4.41880098870239e-32 1.0\" />\n    </joint>\n    <joint name=\"Joint_1_Joint2\" type=\"continuous\">\n        <origin xyz=\"-0.1702 -1.4493667242943834e-33 -0.032799999999999996\" rpy=\"1.2246467991473493e-16 -4.930380657631324e-32 2.1786370924620435e-63\" />\n        <parent link=\"Joint_1\" />\n        <child link=\"Joint_2\" />\n        <axis xyz=\"-1.0 0.0 1.80411241501588e-16\" />\n    </joint>\n    <joint name=\"Joint_2_Joint3\" type=\"continuous\">\n        <origin xyz=\"0.028700000000000028 3.3065463576978445e-17 0.27\" rpy=\"3.141592653589793 -1.5707963267948963 0\" />\n        <parent link=\"Joint_2\" />\n        <child link=\"Joint_3\" />\n        <axis xyz=\"2.465190328815662e-32 2.449293598294708e-16 -1.0\" />\n    </joint>\n    <joint name=\"Joint_3_Joint4\" type=\"continuous\">\n        <origin xyz=\"0.32800000000000007 -4.3719890729560567e-17 0.17850000000000002\" rpy=\"-3.1415926535897927 5.473822126268817e-48 -2.465190328815662e-32\" />\n        <parent link=\"Joint_3\" />\n        <child link=\"Joint_4\" />\n        <axis xyz=\"-2.465190328815662e-32 -2.449293598294709e-16 -1.0\" />\n    </joint>\n    <joint name=\"Joint_4_Joint5\" type=\"continuous\">\n        <origin xyz=\"0.0029999999999999714 2.4860330022691298e-17 0.1015\" rpy=\"-3.1415926535897927 1.5707963267948963 0\" />\n        <parent link=\"Joint_4\" />\n        <child link=\"Joint_5\" />\n        <axis xyz=\"6.162975822039155e-33 3.67394039744207e-16 1.0\" />\n    </joint>\n    <joint name=\"Joint_5_Revolute-10\" type=\"continuous\">\n        <origin xyz=\"0.015000000000002888 -3.7290495034036995e-17 -0.10149999999999992\" rpy=\"-1.57079632679476 1.0477058897466574e-31 2.722983357319059e-31\" />\n        <parent link=\"Joint_5\" />\n        <child link=\"Joint_6\" />\n        <axis xyz=\"1.0 9.860761315262744e-32 -2.4718775496072294e-14\" />\n    </joint>\n</robot>",
+  "viewer_settings": {
+    "mesh_mode": "full",
+    "max_faces_per_mesh": 50000,
+    "max_points_per_mesh": 4000
+  }
+}

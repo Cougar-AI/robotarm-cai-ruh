@@ -1,0 +1,584 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="Robot">
+    <link name="Motor_Component2">
+        <inertial>
+            <origin xyz="0.021711602416778865 1.7576050605749828e-15 -6.254822279626292e-18" rpy="0.0 0.0 0.0" />
+            <mass value="2.853611617460726" />
+            <inertia ixx="0.003269703506849852" iyy="0.002302924095957379" izz="0.0023029240959488405" ixy="1.4653183350336446e-17" iyz="-2.9230541579424166e-32" ixz="-3.8752677703931455e-19" />
+        </inertial>
+        <visual name="Motor_Component2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor_Component2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor_Component1">
+        <inertial>
+            <origin xyz="0.005482338767161513 -3.050609336675616e-14 -5.200010849845537e-33" rpy="0.0 0.0 0.0" />
+            <mass value="0.16578181160500982" />
+            <inertia ixx="1.849095943374206e-05" iyy="2.193462987683855e-05" izz="2.1910658933014135e-05" ixy="-7.515383302166988e-17" iyz="-2.0759477863458627e-08" ixz="-5.577760475715475e-21" />
+        </inertial>
+        <visual name="Motor_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Connector">
+        <inertial>
+            <origin xyz="-0.0006002451749312891 -2.417287964072618e-14 -0.02987355456716875" rpy="0.0 -0.0 0.0" />
+            <mass value="0.7190000488419833" />
+            <inertia ixx="0.0008995137748386978" iyy="0.0008841495520844986" izz="0.0010484792811891227" ixy="1.0075465529215543e-17" iyz="-1.0197263915352412e-16" ixz="3.18225147236644e-06" />
+        </inertial>
+        <visual name="Connector_visual">
+            <origin xyz="2.1371793224034255e-17 -3.944304526105059e-33 0.09" rpy="3.141592653589793 -0.0 -2.7635933520651466e-64" />
+            <geometry>
+                <mesh filename="meshes/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Connector_collision">
+            <origin xyz="2.1371793224034255e-17 -3.944304526105059e-33 0.09" rpy="3.141592653589793 -0.0 -2.7635933520651466e-64" />
+            <geometry>
+                <mesh filename="meshes/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Base-1">
+        <inertial>
+            <origin xyz="-0.00028315345576895287 -0.0004910034666674761 0.007025102661889844" rpy="0.0 0.0 0.0" />
+            <mass value="2.906375112269711" />
+            <inertia ixx="0.009089092862230155" iyy="0.009159738430569605" izz="0.014414558820913635" ixy="6.12747836837605e-05" iyz="-2.2874289130661892e-05" ixz="-1.320062956337996e-05" />
+        </inertial>
+        <visual name="Base-1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Base-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Base-1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Base-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Connector">
+        <inertial>
+            <origin xyz="-0.02987355456716875 2.417287964072618e-14 0.01939975482506869" rpy="0.0 -0.0 0.0" />
+            <mass value="0.7190000488419833" />
+            <inertia ixx="0.0010484792811891255" iyy="0.0008841495520845004" izz="0.0008995137748386986" ixy="1.0197263915352412e-16" iyz="-1.0075465529215608e-17" ixz="3.1822514723698486e-06" />
+        </inertial>
+        <visual name="Connector_visual">
+            <origin xyz="0.09 6.042228157243312e-35 0.02" rpy="2.7635933520651466e-64 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Connector_collision">
+            <origin xyz="0.09 6.042228157243312e-35 0.02" rpy="2.7635933520651466e-64 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor-Casing">
+        <inertial>
+            <origin xyz="-0.0035473041541565758 1.1110409131879087e-08 -0.06789391361805272" rpy="0.0 -0.0 0.0" />
+            <mass value="1.1332133844189154" />
+            <inertia ixx="0.002964016835851669" iyy="0.0032329191592626455" izz="0.003557740144441835" ixy="-6.555381505829499e-10" iyz="5.353627005344432e-10" ixz="9.19459428207457e-05" />
+        </inertial>
+        <visual name="Motor-Casing_visual">
+            <origin xyz="2.1371793224034255e-17 0.0 0.075" rpy="3.141592653589793 -0.0 -2.7635933520651466e-64" />
+            <geometry>
+                <mesh filename="meshes/Motor-Casing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor-Casing_collision">
+            <origin xyz="2.1371793224034255e-17 0.0 0.075" rpy="3.141592653589793 -0.0 -2.7635933520651466e-64" />
+            <geometry>
+                <mesh filename="meshes/Motor-Casing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor-Casing">
+        <inertial>
+            <origin xyz="0.003547304154156592 1.1110409131444687e-08 0.06789391361805283" rpy="0.0 -0.0 0.0" />
+            <mass value="1.1332133844189154" />
+            <inertia ixx="0.0029640168358517245" iyy="0.0032329191592626594" izz="0.003557740144441851" ixy="6.555381498835284e-10" iyz="-5.353627005457036e-10" ixz="9.194594282074808e-05" />
+        </inertial>
+        <visual name="Motor-Casing_visual">
+            <origin xyz="0.0 -2.2403589285995163e-29 -0.07500000000000011" rpy="2.7837904195020854e-28 1.7354939914862218e-29 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Motor-Casing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor-Casing_collision">
+            <origin xyz="0.0 -2.2403589285995163e-29 -0.07500000000000011" rpy="2.7837904195020854e-28 1.7354939914862218e-29 3.141592653589793" />
+            <geometry>
+                <mesh filename="meshes/Motor-Casing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor_Component2">
+        <inertial>
+            <origin xyz="0.021711602416778882 1.7576050605749828e-15 2.1524454115983424e-31" rpy="0.0 0.0 0.0" />
+            <mass value="2.853611617460726" />
+            <inertia ixx="0.0032697035068498534" iyy="0.002302924095957365" izz="0.0023029240959488544" ixy="1.4653183350336643e-17" iyz="5.744086059134931e-32" ixz="1.794497408730906e-33" />
+        </inertial>
+        <visual name="Motor_Component2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor_Component2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor_Component1">
+        <inertial>
+            <origin xyz="0.005482338767161531 -3.050609336675616e-14 -3.735918959608824e-30" rpy="0.0 0.0 0.0" />
+            <mass value="0.16578181160500982" />
+            <inertia ixx="1.849095943374295e-05" iyy="2.1934629876839418e-05" izz="2.1910658933015003e-05" ixy="-7.51538330216697e-17" iyz="-2.075947786345863e-08" ixz="-9.203690105364245e-33" />
+        </inertial>
+        <visual name="Motor_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component7">
+        <inertial>
+            <origin xyz="0.13499999290236347 -5.000403216957745e-09 -0.07750071644970259" rpy="0.0 -0.0 0.0" />
+            <mass value="1.3108180008698196" />
+            <inertia ixx="0.003380118249171324" iyy="0.0041386186293194405" izz="0.004138590683819901" ixy="1.117228064824322e-09" iyz="-3.091307530455177e-11" ixz="-4.2607480044143387e-11" />
+        </inertial>
+        <visual name="Component7_visual">
+            <origin xyz="-0.17250000000000007 -4.7148901767134346e-17 0.06" rpy="-3.141592653589793 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Component7.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Component7_collision">
+            <origin xyz="-0.17250000000000007 -4.7148901767134346e-17 0.06" rpy="-3.141592653589793 -1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Component7.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Connector">
+        <inertial>
+            <origin xyz="-0.08987355456716874 -2.4148720031324455e-14 -0.32189975482506883" rpy="0.0 -0.0 0.0" />
+            <mass value="0.7190000488419833" />
+            <inertia ixx="0.0010484792811891186" iyy="0.0008841495520844622" izz="0.0008995137748386969" ixy="-1.0201249861546687e-16" iyz="-1.0076567677022542e-17" ixz="-3.182251472368114e-06" />
+        </inertial>
+        <visual name="Connector_visual">
+            <origin xyz="0.03000000000000002 -5.127434745680102e-18 -0.3225000000000002" rpy="-3.141592653589793 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Connector_collision">
+            <origin xyz="0.03000000000000002 -5.127434745680102e-18 -0.3225000000000002" rpy="-3.141592653589793 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Connector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor-Casing">
+        <inertial>
+            <origin xyz="-0.005393913618052828 1.1110409165831275e-08 -0.05645269584584355" rpy="0.0 -0.0 0.0" />
+            <mass value="1.1332133844189154" />
+            <inertia ixx="0.003557740144441879" iyy="0.003232919159262687" izz="0.0029640168358517245" ixy="5.35362700466146e-10" iyz="6.555381499060474e-10" ixz="-9.194594282072033e-05" />
+        </inertial>
+        <visual name="Motor-Casing_visual">
+            <origin xyz="0.13750000000000012 -6.123233995555098e-19 -0.060000000000000143" rpy="-3.141592653589793 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Motor-Casing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor-Casing_collision">
+            <origin xyz="0.13750000000000012 -6.123233995555098e-19 -0.060000000000000143" rpy="-3.141592653589793 1.5707963267948966 0" />
+            <geometry>
+                <mesh filename="meshes/Motor-Casing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor_Component2">
+        <inertial>
+            <origin xyz="0.021711602416778882 1.757605060574983e-15 4.278841072699279e-31" rpy="0.0 0.0 0.0" />
+            <mass value="2.853611617460726" />
+            <inertia ixx="0.0032697035068498673" iyy="0.002302924095957337" izz="0.0023029240959488544" ixy="1.465318335033682e-17" iyz="1.0833355937178202e-31" ixz="3.4729998671286115e-33" />
+        </inertial>
+        <visual name="Motor_Component2_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor_Component2_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor_Component1">
+        <inertial>
+            <origin xyz="0.005482338767161513 -3.050609336675617e-14 -7.472495694513475e-30" rpy="0.0 0.0 0.0" />
+            <mass value="0.16578181160500982" />
+            <inertia ixx="1.8490959433743818e-05" iyy="2.1934629876846357e-05" izz="2.191065893301587e-05" ixy="-7.515383302166987e-17" iyz="-2.0759477863458627e-08" ixz="1.73472856058242e-18" />
+        </inertial>
+        <visual name="Motor_Component1_visual">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor_Component1_collision">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/Motor_Component1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Component5">
+        <inertial>
+            <origin xyz="0.005183280616861756 -1.9975051548382085e-08 0.36231400772454014" rpy="0.0 -0.0 0.0" />
+            <mass value="2.2066262348787697" />
+            <inertia ixx="0.006952898565464827" iyy="0.009324728559745643" izz="0.006953917096416142" ixy="1.2179073252295376e-09" iyz="3.310347107352505e-09" ixz="-0.0024627750526429407" />
+        </inertial>
+        <visual name="Component5_visual">
+            <origin xyz="-0.059999999999999984 -0.016210188865661626 -0.1762898111343384" rpy="1.224646799147348e-16 -5.99903913064394e-32 2.4492935983003335e-16" />
+            <geometry>
+                <mesh filename="meshes/Component5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Component5_collision">
+            <origin xyz="-0.059999999999999984 -0.016210188865661626 -0.1762898111343384" rpy="1.224646799147348e-16 -5.99903913064394e-32 2.4492935983003335e-16" />
+            <geometry>
+                <mesh filename="meshes/Component5.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor2">
+        <inertial>
+            <origin xyz="-0.019848408528043555 -4.696598338860363e-18 0.00014144446556983327" rpy="0.0 -0.0 0.0" />
+            <mass value="0.9501546690394509" />
+            <inertia ixx="0.0003555727976525258" iyy="0.0003831854738709506" izz="0.00038614783658975395" ixy="-1.2104824421315433e-17" iyz="-8.857436293917038e-19" ixz="-3.067362440337118e-06" />
+        </inertial>
+        <visual name="Motor2_visual">
+            <origin xyz="0.005999999999999997 1.0745347191563095e-16 2.842170943040401e-16" rpy="1.5707963267948968 1.8369701987210297e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor2_collision">
+            <origin xyz="0.005999999999999997 1.0745347191563095e-16 2.842170943040401e-16" rpy="1.5707963267948968 1.8369701987210297e-16 -1.5707963267948966" />
+            <geometry>
+                <mesh filename="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="LongCasing">
+        <inertial>
+            <origin xyz="-0.00022399274901875545 5.019578321076439e-10 -0.10374937576358569" rpy="0.0 -0.0 0.0" />
+            <mass value="2.1292985760893948" />
+            <inertia ixx="0.008590382484598313" iyy="0.008572312986398822" izz="0.0032057734150759635" ixy="-3.407298805110977e-11" iyz="-7.388427211670458e-11" ixz="-2.801411917447566e-05" />
+        </inertial>
+        <visual name="LongCasing_visual">
+            <origin xyz="-0.04 -1.1712852909795398e-16 0.5275" rpy="-3.141592653589793 -1.6312960025694578e-63 7.346704069302791e-48" />
+            <geometry>
+                <mesh filename="meshes/LongCasing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="LongCasing_collision">
+            <origin xyz="-0.04 -1.1712852909795398e-16 0.5275" rpy="-3.141592653589793 -1.6312960025694578e-63 7.346704069302791e-48" />
+            <geometry>
+                <mesh filename="meshes/LongCasing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="SmallMotorCasing">
+        <inertial>
+            <origin xyz="0.0032225274352665778 -1.0031727183877008e-07 -0.04830472380366445" rpy="0.0 -0.0 0.0" />
+            <mass value="0.990764553055721" />
+            <inertia ixx="0.0011220070460654652" iyy="0.0016118573766054078" izz="0.001442460502871616" ixy="-3.202875451244076e-10" iyz="4.179920712188269e-09" ixz="1.8389226332654607e-05" />
+        </inertial>
+        <visual name="SmallMotorCasing_visual">
+            <origin xyz="0.05199999999999991 -4.360307758079592e-19 0.7855" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/SmallMotorCasing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="SmallMotorCasing_collision">
+            <origin xyz="0.05199999999999991 -4.360307758079592e-19 0.7855" rpy="3.141592653589793 -0.0 0.0" />
+            <geometry>
+                <mesh filename="meshes/SmallMotorCasing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="SmallMotorCasing">
+        <inertial>
+            <origin xyz="-0.0032225274352660448 -1.0031727176522391e-07 0.048304723803664955" rpy="0.0 -0.0 0.0" />
+            <mass value="0.990764553055721" />
+            <inertia ixx="0.0011220070460636897" iyy="0.0016118573766054078" izz="0.0014424605028715565" ixy="3.2028750684740397e-10" iyz="-4.179920712195001e-09" ixz="1.8389226332675424e-05" />
+        </inertial>
+        <visual name="SmallMotorCasing_visual">
+            <origin xyz="-0.05199999999999932 9.10308251943062e-17 -0.7855000000000004" rpy="2.5134778481196593e-29 2.220446049250486e-16 3.1415926535897927" />
+            <geometry>
+                <mesh filename="meshes/SmallMotorCasing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="SmallMotorCasing_collision">
+            <origin xyz="-0.05199999999999932 9.10308251943062e-17 -0.7855000000000004" rpy="2.5134778481196593e-29 2.220446049250486e-16 3.1415926535897927" />
+            <geometry>
+                <mesh filename="meshes/SmallMotorCasing.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="SmallConnector">
+        <inertial>
+            <origin xyz="-0.03425846685783158 -3.7843612403340263e-14 -6.673595201050376e-05" rpy="0.0 -0.0 0.0" />
+            <mass value="0.27726947319273426" />
+            <inertia ixx="0.00017145766182610767" iyy="0.0002146705287448536" izz="0.00021512510796107298" ixy="7.462155797288102e-18" iyz="-6.4762054310532725e-18" ixz="-2.959048067102243e-07" />
+        </inertial>
+        <visual name="SmallConnector_visual">
+            <origin xyz="0.029000000000000026 1.850441313511652e-16 -0.7555" rpy="2.4492935982947064e-16 -0.0 5.438524293787563e-32" />
+            <geometry>
+                <mesh filename="meshes/SmallConnector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="SmallConnector_collision">
+            <origin xyz="0.029000000000000026 1.850441313511652e-16 -0.7555" rpy="2.4492935982947064e-16 -0.0 5.438524293787563e-32" />
+            <geometry>
+                <mesh filename="meshes/SmallConnector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor2">
+        <inertial>
+            <origin xyz="-0.15364144446557113 2.2727123016954935e-16 -0.022151591471955924" rpy="0.0 -0.0 0.0" />
+            <mass value="0.9501546690394509" />
+            <inertia ixx="0.0003861478365897453" iyy="0.00038318547387083957" izz="0.00035557279765248504" ixy="-8.838911291087384e-19" iyz="-1.2095430975770254e-17" ixz="-3.067362440344057e-06" />
+        </inertial>
+        <visual name="Motor2_visual">
+            <origin xyz="-0.15350000000000083 1.2465235504753795e-16 -0.04799999999999954" rpy="-2.843558721821185e-14 -3.673940397442056e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor2_collision">
+            <origin xyz="-0.15350000000000083 1.2465235504753795e-16 -0.04799999999999954" rpy="-2.843558721821185e-14 -3.673940397442056e-16 1.5707963267948968" />
+            <geometry>
+                <mesh filename="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="SmallConnector">
+        <inertial>
+            <origin xyz="-6.673595201232451e-05 -3.7857256823648785e-14 0.034258466857831994" rpy="0.0 -0.0 0.0" />
+            <mass value="0.27726947319273426" />
+            <inertia ixx="0.0002151251079610672" iyy="0.00021467052874482584" izz="0.00017145766182616188" ixy="-6.476147135017293e-18" iyz="-7.446170933879229e-18" ixz="2.9590480670783903e-07" />
+        </inertial>
+        <visual name="SmallConnector_visual">
+            <origin xyz="-0.7555000000000025 -8.29011839061693e-17 -0.028999999999991956" rpy="-1.2246467991472563e-16 1.5707963267948866 0" />
+            <geometry>
+                <mesh filename="meshes/SmallConnector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="SmallConnector_collision">
+            <origin xyz="-0.7555000000000025 -8.29011839061693e-17 -0.028999999999991956" rpy="-1.2246467991472563e-16 1.5707963267948866 0" />
+            <geometry>
+                <mesh filename="meshes/SmallConnector.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="SmallMotorCasing-1">
+        <inertial>
+            <origin xyz="0.10030482272114583 -1.8927229562715695e-07 0.04164565415937745" rpy="0.0 -0.0 0.0" />
+            <mass value="0.7281343484121732" />
+            <inertia ixx="0.000797146736289943" iyy="0.000874765057321425" izz="0.00081439792664173" ixy="-4.041881770255336e-09" iyz="1.1298167588811648e-09" ixz="4.014917167128457e-05" />
+        </inertial>
+        <visual name="SmallMotorCasing-1_visual">
+            <origin xyz="-0.7300000000000075 4.1798245185018115e-16 -0.001999999999912887" rpy="3.673940397466319e-16 1.5707963267947882 0" />
+            <geometry>
+                <mesh filename="meshes/SmallMotorCasing-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="SmallMotorCasing-1_collision">
+            <origin xyz="-0.7300000000000075 4.1798245185018115e-16 -0.001999999999912887" rpy="3.673940397466319e-16 1.5707963267947882 0" />
+            <geometry>
+                <mesh filename="meshes/SmallMotorCasing-1.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <link name="Motor2">
+        <inertial>
+            <origin xyz="0.00014144446556784373 -5.985446830374974e-16 -0.025848408528039775" rpy="0.0 -0.0 0.0" />
+            <mass value="0.9501546690394509" />
+            <inertia ixx="0.0003861478365897544" iyy="0.00038318547387072854" izz="0.00035557279765230376" ixy="5.702941153212621e-19" iyz="1.1423588022244301e-17" ixz="-3.067362440330179e-06" />
+        </inertial>
+        <visual name="Motor2_visual">
+            <origin xyz="-4.547473508864641e-15 -7.335382644606904e-17 3.75699471533153e-15" rpy="3.1415926535896848 2.4657543156114948e-14 1.5707963267948972" />
+            <geometry>
+                <mesh filename="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </visual>
+        <collision name="Motor2_collision">
+            <origin xyz="-4.547473508864641e-15 -7.335382644606904e-17 3.75699471533153e-15" rpy="3.1415926535896848 2.4657543156114948e-14 1.5707963267948972" />
+            <geometry>
+                <mesh filename="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+            </geometry>
+        </collision>
+    </link>
+    <joint name="Base-1_Rigid-1" type="fixed">
+        <origin xyz="-2.1371793224034255e-17 5.906294567565201e-81 0.06" rpy="3.141592653589793 -0.0 -2.7635933520651466e-64" />
+        <parent link="Base-1" />
+        <child link="Connector" />
+    </joint>
+    <joint name="Motor-Casing_Rigid-4" type="fixed">
+        <origin xyz="-0.06 0.0 -0.0425" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="Motor-Casing" />
+        <child link="Connector" />
+    </joint>
+    <joint name="Connector_Revolute-7" type="continuous">
+        <origin xyz="0.06 0.0 0.023999999999999987" rpy="0.0 -0.0 0.0" />
+        <parent link="Connector" />
+        <child link="Motor_Component1" />
+        <axis xyz="-1.0 0.0 0.0" />
+    </joint>
+    <joint name="Connector_Revolute-9" type="continuous">
+        <origin xyz="0.0 0.0 -0.0795" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="Connector" />
+        <child link="Motor_Component1" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="Motor-Casing_Rigid-17" type="fixed">
+        <origin xyz="0.0 0.0 -0.015" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="Motor-Casing" />
+        <child link="Component7" />
+    </joint>
+    <joint name="Connector_Rigid-12" type="fixed">
+        <origin xyz="0.0 0.0 -0.05449999999999999" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="Connector" />
+        <child link="Motor_Component1" />
+    </joint>
+    <joint name="Motor-Casing_Revolute-14" type="continuous">
+        <origin xyz="0.1375 6.471124613141113e-33 0.2625" rpy="-2.465190328815662e-32 4.527755955071187e-80 1.8366760173225376e-48" />
+        <parent link="Motor-Casing" />
+        <child link="Connector" />
+        <axis xyz="1.0 0.0 0.0" />
+    </joint>
+    <joint name="Connector_Rigid-15" type="fixed">
+        <origin xyz="0.0 0.0 0.005" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="Connector" />
+        <child link="Component5" />
+    </joint>
+    <joint name="Component7_Rigid-18" type="fixed">
+        <origin xyz="0.21 0.0 -0.0775" rpy="2.465190328815662e-32 -1.5707963267948966 0" />
+        <parent link="Component7" />
+        <child link="Motor-Casing" />
+    </joint>
+    <joint name="Motor-Casing_Revolute-19" type="continuous">
+        <origin xyz="-0.075 0.0 -0.0625" rpy="-3.141592653589793 1.5707963267948966 0" />
+        <parent link="Motor-Casing" />
+        <child link="Motor-Casing" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="Base-1_Revolute-20" type="continuous">
+        <origin xyz="-2.1371793224034255e-17 5.906294567565201e-81 0.075" rpy="3.141592653589793 -0.0 -2.7635933520651466e-64" />
+        <parent link="Base-1" />
+        <child link="Motor-Casing" />
+        <axis xyz="0.0 0.0 1.0" />
+    </joint>
+    <joint name="LongCasing_Rigid-21" type="fixed">
+        <origin xyz="0.0 3.9523939676655565e-17 -0.17799999999999996" rpy="2.2204460492503126e-16 -1.6312960025694578e-63 7.346704069302791e-48" />
+        <parent link="LongCasing" />
+        <child link="SmallMotorCasing" />
+    </joint>
+    <joint name="SmallMotorCasing_Rigid-22" type="fixed">
+        <origin xyz="0.041999999999999996 0.0 -0.05" rpy="3.141592653589793 -0.0 0.0" />
+        <parent link="SmallMotorCasing" />
+        <child link="Motor2" />
+    </joint>
+    <joint name="Motor2_Rigid-23" type="fixed">
+        <origin xyz="-0.046 0.0 0.0" rpy="0.0 -0.0 0.0" />
+        <parent link="Motor2" />
+        <child link="SmallConnector" />
+    </joint>
+    <joint name="SmallConnector_Revolute-25" type="continuous">
+        <origin xyz="-0.051500000000000004 0.0 0.0" rpy="-0.0 -1.5707963267948966 0" />
+        <parent link="SmallConnector" />
+        <child link="SmallMotorCasing" />
+        <axis xyz="0.0 -3.9258213285614963e-63 1.0" />
+    </joint>
+    <joint name="SmallMotorCasing_Rigid-26" type="fixed">
+        <origin xyz="0.0 0.0 -0.10350000000000002" rpy="-0.0 1.5707963267948966 0" />
+        <parent link="SmallMotorCasing" />
+        <child link="Motor2" />
+    </joint>
+    <joint name="Motor2_Rigid-27" type="fixed">
+        <origin xyz="-0.15350000000000003 0.0 0.004000000000000057" rpy="0.0 -0.0 5.341733580865339e-33" />
+        <parent link="Motor2" />
+        <child link="SmallConnector" />
+    </joint>
+    <joint name="SmallMotorCasing-1_Rigid-31" type="fixed">
+        <origin xyz="0.10549999999999997 0.0 0.009999999999999998" rpy="3.141592653589793 -1.9355793543656107e-94 4.930380657631324e-32" />
+        <parent link="SmallMotorCasing-1" />
+        <child link="Motor2" />
+    </joint>
+    <joint name="SmallConnector_Revolute-32" type="continuous">
+        <origin xyz="0.05 -2.6708667904326695e-34 -0.004000000000000057" rpy="-5.341733580865339e-33 -1.5707963267948966 0" />
+        <parent link="SmallConnector" />
+        <child link="SmallMotorCasing-1" />
+        <axis xyz="1.0 0.0 0.0" />
+    </joint>
+    <joint name="Component5_Rigid-33" type="fixed">
+        <origin xyz="0.04 0.0 0.4275" rpy="3.141592653589793 -0.0 7.346704069302791e-48" />
+        <parent link="Component5" />
+        <child link="LongCasing" />
+    </joint>
+    <joint name="Motor_Component1_Revolute-6" type="continuous">
+        <origin xyz="0.0204999999999999 -2.3286586130844667e-32 1.6901896549015266e-16" rpy="-3.141592653589793 -1.8041124150158754e-16 2.2094004943511938e-32" />
+        <parent link="Motor_Component1" />
+        <child link="Motor_Component2" />
+        <axis xyz="1.0 -4.447480477593384e-48 0.0" />
+    </joint>
+    <joint name="Motor_Component1_Revolute-6" type="continuous">
+        <origin xyz="0.020499999999999883 0.0 1.0658141036401502e-16" rpy="3.141592653589793 1.5707963267948966 0" />
+        <parent link="Motor_Component1" />
+        <child link="Motor_Component2" />
+        <axis xyz="0.0 0.0 -1.0" />
+    </joint>
+    <joint name="Motor_Component1_Revolute-6" type="continuous">
+        <origin xyz="0.020499999999999814 4.3907423092179864e-17 3.552713678800501e-16" rpy="3.141592653589793 1.5707963267948963 0" />
+        <parent link="Motor_Component1" />
+        <child link="Motor_Component2" />
+        <axis xyz="-0.0 -2.938681627714443e-47 -1.0" />
+    </joint>
+</robot>

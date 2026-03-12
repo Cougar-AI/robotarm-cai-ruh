@@ -1,0 +1,68 @@
+<mujoco model="RobotArm-Ethan">
+    <compiler angle="radian" />
+    <asset>
+        <mesh name="Base" file="meshes/Base.stl" scale="0.001 0.001 0.001" />
+        <mesh name="Motor1" file="meshes/Motor1.stl" scale="0.001 0.001 0.001" />
+        <mesh name="Motor2" file="meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+        <mesh name="Motor3" file="meshes/Motor3.stl" scale="0.001 0.001 0.001" />
+        <mesh name="Motor4" file="meshes/Motor4.stl" scale="0.001 0.001 0.001" />
+        <mesh name="Motor5" file="meshes/Motor5.stl" scale="0.001 0.001 0.001" />
+        <mesh name="Motor6" file="meshes/Motor6.stl" scale="0.001 0.001 0.001" />
+        <mesh name="mesh_reachable" file="workspace_reachable.stl" scale="1 1 1" />
+        <mesh name="mesh_dexterous" file="workspace_dexterous.stl" scale="1 1 1" />
+    </asset>
+    <worldbody>
+        <light directional="true" pos="-0.5 0.5 3" dir="0 0 -1" />
+        <geom pos="0 0 0" size="1 1 1" type="plane" rgba="1 0.83 0.61 0.5" condim="3"/>
+        <body name="Base" pos="0.0 0.0 0.0" euler="-0.0 0.0 -0.0">
+            <geom name="Base_geom" type="mesh" mesh="Base" pos="0 0 0" euler="0 0 0" />
+            <inertial mass="2.4122044803401117" pos="1.3235652791135385e-15 -1.2024003234434664e-17 0.040706029870028734" fullinertia="0.005160980500236585 0.005160980500287154 0.004301738595359231 -1.338662514172067e-18 4.991053419885452e-17 -1.716117125237256e-18" />
+            <body name="Motor1" pos="0.1423297719189145 -0.01027258611591614 0.15770000000390244" euler="-0.998793535503642 0.06061135845040658 3.102614832907562">
+                <joint name="Base_Joint1" type="hinge" axis="-3.0685306605585416e-10 0.8414576369625939 0.5403230933407602" pos="0.1427000000115653 -0.03172295289953833 -0.020370180566855738" />
+                <geom name="Motor1_geom" type="mesh" mesh="Motor1" pos="0 0 0" euler="0 0 0" />
+                <inertial mass="1.691716058864275" pos="0.09637054351967482 -0.0011259128189953238 -0.0006767784399193354" fullinertia="0.002257013544964768 0.007851931114456923 0.007479077999291456 7.478762350090756e-05 5.271034506691992e-05 0.00040561850966995116" />
+                <body name="Motor2" pos="1.3677947663381929e-15 0.30964465592792506 0.20253440955863863" euler="2.1500389904258537 -4.5837389106338545e-15 -2.1415613720555492e-15">
+                    <joint name="Motor1_Joint2" type="hinge" axis="1.0000004285023572 -3.2024427734644867e-07 2.3901748572984632e-09" pos="0.00250022986880123 -3.9967592964504015e-07 0.37000000336912475" range="-1.85 1.82"/>
+                    <geom name="Motor2_geom" type="mesh" mesh="Motor2" pos="0 0 0" euler="0 0 0" />
+                    <inertial mass="12.980191586376609" pos="-0.03244512141878634 -3.1772604724984287e-06 0.1844957279618256" fullinertia="0.1567013632756212 0.15488233660254772 0.013363127638319275 -3.7380297244672794e-07 -5.983792157460537e-05 -7.203839915999278e-06" />
+                    <body name="Motor3" pos="0.13670000174890376 0.00013738765838436736 0.524699982047881" euler="3.1413185275424467 -3.1516624106031204e-11 1.5707963271852643">
+                        <joint name="Motor2_Joint3" type="hinge" axis="-3.1985455273275676e-07 1.0000004285023572 2.3339041081704703e-09" pos="-6.906188184007539e-06 0.12399993701458148 0.5247001245947477" />
+                        <geom name="Motor3_geom" type="mesh" mesh="Motor3" pos="0 0 0" euler="0 0 0" />
+                        <inertial mass="3.529255019217682" pos="-4.0905239495148474e-05 0.012638084627100839 0.6525648821593434" fullinertia="0.04551474852724565 0.04185121994977628 0.006843647416468968 -2.0326793243341392e-06 1.0419460491157965e-05 0.007537659114950242" />
+                        <body name="Motor4" pos="-0.8063315184028572 -0.0010000000191660934 0.7797252643718838" euler="-4.152366334346681e-10 1.5374541809968485 4.146646543164061e-10">
+                            <joint name="Motor3_Joint4" type="hinge" axis="1.2995609844756312e-08 -1.0000004285023572 3.1958513299623625e-07" pos="-8.276568264389134e-05 0.02100025305224196 0.8066997994150384" />
+                            <geom name="Motor4_geom" type="mesh" mesh="Motor4" pos="0 0 0" euler="0 0 0" />
+                            <inertial mass="0.9118566506281014" pos="-0.00035660089148102647 0.0832966315783691 0.8066715948318879" fullinertia="0.001431385364215682 0.0005192169652328093 0.0013654870601050746 6.858326247195959e-06 6.95838417742438e-07 5.717286249123185e-07" />
+                            <body name="Motor5" pos="-0.0035826441634863215 0.11141735583790269 1.6133999794097116" euler="-3.141592653589793 -1.5410402121052155e-11 1.5707963267476406">
+                                <joint name="Motor4_Joint5" type="hinge" axis="1.3917762757295214e-07 -0.9999995672083869 1.1086354399780785e-07" pos="-8.252183255539331e-05 0.021000215997939237 0.8067004311185885" />
+                                <geom name="Motor5_geom" type="mesh" mesh="Motor5" pos="0 0 0" euler="0 0 0" />
+                                <inertial mass="0.9118566506281014" pos="-0.0003566008914810949 0.08329663157836897 0.8066715948318881" fullinertia="0.0014313853642160608 0.0005192169652281584 0.0013654870601053208 6.85832624721531e-06 6.95838417587408e-07 5.717286252629367e-07" />
+                                <body name="Motor6" pos="0.0014173542169161912 -0.8981768864923265 0.8012102583435919" euler="-1.570796331219543 -3.191002245628125e-10 -3.069543044922836">
+                                    <joint name="Motor5_Joint6" type="hinge" axis="-0.9974059999811413 0.07198700026135232 -1.3267452764458704e-08" pos="0.026327986440218117 0.0036039688723703625 1.0096769725919181" />
+                                    <geom name="Motor6_geom" type="mesh" mesh="Motor6" pos="0 0 0" euler="0 0 0" />
+                                    <inertial mass="0.31166472599281014" pos="0.050737564015001395 0.001842049703260261 1.0096768066187767" fullinertia="0.00012596263951898204 0.0001357987576094271 0.0001358508461420448 7.136633085662077e-07 5.680981178156063e-10 -5.4754667181796854e-11" />
+                                    <site name="end_effector" pos="0.1 0 1.01" size="0.01" rgba="1 0 0 1" />
+                                </body>
+                            </body>
+                        </body>
+                    </body>
+                </body>
+            </body>
+        </body>
+        <geom name="vol_reachable" type="mesh" mesh="mesh_reachable" 
+          pos="0 0 0" rgba="0.5 0.5 0.5 0.1" 
+          contype="0" conaffinity="0" group="1"/>
+          
+        <geom name="vol_dexterous" type="mesh" mesh="mesh_dexterous" 
+          pos="0 0 0" rgba="0 1 1 0.2" 
+          contype="0" conaffinity="0" group="2"/>
+    </worldbody>
+    <contact>
+        <exclude body1="Base" body2="Motor1"/>
+        <exclude body1="Motor1" body2="Motor2"/>
+        <exclude body1="Motor2" body2="Motor3"/>
+        <exclude body1="Motor3" body2="Motor4"/>
+        <exclude body1="Motor4" body2="Motor5"/>
+        <exclude body1="Motor5" body2="Motor6"/>
+    </contact>
+</mujoco>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<robot name="live_edit_fixture">
+  <link name="base_link">
+    <visual>
+      <origin xyz="0.195038 0 0.003" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/Base-1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <link name="tool_link">
+    <visual>
+      <origin xyz="0.10 0 0.12" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="../meshes/Motor2.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+  <joint name="tool_fixed" type="fixed">
+    <origin xyz="0.08 0 0.10" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="tool_link" />
+  </joint>
+</robot>

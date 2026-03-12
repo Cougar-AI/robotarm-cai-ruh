@@ -1,0 +1,6 @@
+source_file: /Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/builder_benchmark-draft.urdf
+kind: urdf
+model_name: builder_benchmark
+links: 3
+joints: 2
+warnings: 0

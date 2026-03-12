@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot name="builder_host">
+  <link name="base_link" />
+  <link name="Base-1_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <mass value="0.369929676" />
+      <inertia ixx="0.00127683503" ixy="0" ixz="0" iyy="0.0012766421" iyz="0" izz="0.00199704124" />
+    </inertial>
+    <visual>
+      <origin xyz="0.181162 0.000214 -0.010426" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.181162 0.000214 -0.010426" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl" scale="0.001 0.001 0.001" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="Base-1_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="Base-1_link" />
+  </joint>
+</robot>

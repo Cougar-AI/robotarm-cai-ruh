@@ -1,0 +1,6 @@
+source_file: /Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/live_edit_fixture-draft.urdf
+kind: urdf
+model_name: live_edit_fixture
+links: 2
+joints: 1
+warnings: 0

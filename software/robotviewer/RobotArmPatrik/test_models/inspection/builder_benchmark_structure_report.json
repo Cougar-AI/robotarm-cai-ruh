@@ -1,0 +1,520 @@
+{
+  "source_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/builder_benchmark.urdf",
+  "model_name": "builder_benchmark",
+  "kind": "urdf",
+  "link_count": 3,
+  "joint_count": 2,
+  "mesh_asset_count": 0,
+  "links": {
+    "world_link": {
+      "name": "world_link",
+      "parent": null,
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [],
+      "joints_out": [
+        "world_to_base_mesh"
+      ],
+      "child_links": [
+        "base_mesh_link"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "base_mesh_link": {
+      "name": "base_mesh_link",
+      "parent": "world_link",
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Base-1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.000124,
+            0.000214,
+            -0.010426
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.000124,
+            0.000214,
+            -0.010426
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "../meshes/Base-1.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Base-1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.000124,
+            0.000214,
+            -0.010426
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.000124,
+            0.000214,
+            -0.010426
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "../meshes/Base-1.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [
+        "base_to_motor_mesh"
+      ],
+      "child_links": [
+        "motor_mesh_link"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "motor_mesh_link": {
+      "name": "motor_mesh_link",
+      "parent": "base_mesh_link",
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Motor2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Motor2.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.0,
+            -0.000141,
+            -0.025847
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.000141,
+            -0.025847
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "../meshes/Motor2.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Motor2",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Motor2.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.0,
+            -0.000141,
+            -0.025847
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.0,
+            -0.000141,
+            -0.025847
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "../meshes/Motor2.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [],
+      "child_links": [],
+      "inertial": {},
+      "extra": {}
+    }
+  },
+  "joints": {
+    "world_to_base_mesh": {
+      "name": "world_to_base_mesh",
+      "joint_type": "fixed",
+      "parent": "world_link",
+      "child": "base_mesh_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limits": {},
+      "extra": {}
+    },
+    "base_to_motor_mesh": {
+      "name": "base_to_motor_mesh",
+      "joint_type": "fixed",
+      "parent": "base_mesh_link",
+      "child": "motor_mesh_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limits": {},
+      "extra": {}
+    }
+  },
+  "mesh_assets": {},
+  "mesh_asset_scales": {},
+  "mesh_metrics": {
+    "base_mesh_link:Base-1:visual": {
+      "mesh_name": "Base-1",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.08996521759033203,
+        -0.08999130249023438,
+        -0.02
+      ],
+      "bounds_max": [
+        0.09,
+        0.08999130249023438,
+        0.075
+      ],
+      "extents": [
+        0.17996521759033202,
+        0.17998260498046875,
+        0.095
+      ],
+      "bbox_center": [
+        1.7391204833981655e-05,
+        0.0,
+        0.027499999999999997
+      ],
+      "vertex_count": 2985,
+      "face_count": 6194,
+      "surface_centroid": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ],
+      "center_mass": [
+        -0.0002816395506031873,
+        -0.000492061410033393,
+        0.007029615412782355
+      ],
+      "is_watertight": false,
+      "volume": 0.00036992967640005013,
+      "recommended_frame_origin": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ]
+    },
+    "base_mesh_link:Base-1:collision": {
+      "mesh_name": "Base-1",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.08996521759033203,
+        -0.08999130249023438,
+        -0.02
+      ],
+      "bounds_max": [
+        0.09,
+        0.08999130249023438,
+        0.075
+      ],
+      "extents": [
+        0.17996521759033202,
+        0.17998260498046875,
+        0.095
+      ],
+      "bbox_center": [
+        1.7391204833981655e-05,
+        0.0,
+        0.027499999999999997
+      ],
+      "vertex_count": 2985,
+      "face_count": 6194,
+      "surface_centroid": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ],
+      "center_mass": [
+        -0.0002816395506031873,
+        -0.000492061410033393,
+        0.007029615412782355
+      ],
+      "is_watertight": false,
+      "volume": 0.00036992967640005013,
+      "recommended_frame_origin": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ]
+    },
+    "motor_mesh_link:Motor2:visual": {
+      "mesh_name": "Motor2",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Motor2.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.0275,
+        -0.0275,
+        0.0
+      ],
+      "bounds_max": [
+        0.0275,
+        0.0275,
+        0.054
+      ],
+      "extents": [
+        0.055,
+        0.055,
+        0.054
+      ],
+      "bbox_center": [
+        0.0,
+        0.0,
+        0.027
+      ],
+      "vertex_count": 1673,
+      "face_count": 3338,
+      "surface_centroid": [
+        -1.2747415942438518e-11,
+        9.782402336462668e-05,
+        0.029370330393931183
+      ],
+      "center_mass": [
+        -5.1838614058525586e-12,
+        0.00014144167175617224,
+        0.025846809656717658
+      ],
+      "is_watertight": true,
+      "volume": 0.0001209726835259309,
+      "recommended_frame_origin": [
+        -5.1838614058525586e-12,
+        0.00014144167175617224,
+        0.025846809656717658
+      ]
+    },
+    "motor_mesh_link:Motor2:collision": {
+      "mesh_name": "Motor2",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Motor2.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.0275,
+        -0.0275,
+        0.0
+      ],
+      "bounds_max": [
+        0.0275,
+        0.0275,
+        0.054
+      ],
+      "extents": [
+        0.055,
+        0.055,
+        0.054
+      ],
+      "bbox_center": [
+        0.0,
+        0.0,
+        0.027
+      ],
+      "vertex_count": 1673,
+      "face_count": 3338,
+      "surface_centroid": [
+        -1.2747415942438518e-11,
+        9.782402336462668e-05,
+        0.029370330393931183
+      ],
+      "center_mass": [
+        -5.1838614058525586e-12,
+        0.00014144167175617224,
+        0.025846809656717658
+      ],
+      "is_watertight": true,
+      "volume": 0.0001209726835259309,
+      "recommended_frame_origin": [
+        -5.1838614058525586e-12,
+        0.00014144167175617224,
+        0.025846809656717658
+      ]
+    }
+  },
+  "warnings": [],
+  "notes": [],
+  "xml_source": "<?xml version=\"1.0\"?>\n<robot name=\"builder_benchmark\">\n  <link name=\"world_link\"/>\n  <link name=\"base_mesh_link\">\n    <visual>\n      <origin xyz=\"0.000124 0.000214 -0.010426\" rpy=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"../meshes/Base-1.stl\" scale=\"0.001 0.001 0.001\"/>\n      </geometry>\n    </visual>\n    <collision>\n      <origin xyz=\"0.000124 0.000214 -0.010426\" rpy=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"../meshes/Base-1.stl\" scale=\"0.001 0.001 0.001\"/>\n      </geometry>\n    </collision>\n  </link>\n  <joint name=\"world_to_base_mesh\" type=\"fixed\">\n    <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n    <parent link=\"world_link\"/>\n    <child link=\"base_mesh_link\"/>\n  </joint>\n  <link name=\"motor_mesh_link\">\n    <visual>\n      <origin xyz=\"0 -0.000141 -0.025847\" rpy=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"../meshes/Motor2.stl\" scale=\"0.001 0.001 0.001\"/>\n      </geometry>\n    </visual>\n    <collision>\n      <origin xyz=\"0 -0.000141 -0.025847\" rpy=\"0 0 0\"/>\n      <geometry>\n        <mesh filename=\"../meshes/Motor2.stl\" scale=\"0.001 0.001 0.001\"/>\n      </geometry>\n    </collision>\n  </link>\n  <joint name=\"base_to_motor_mesh\" type=\"fixed\">\n    <origin xyz=\"0 0 0\" rpy=\"0 0 0\"/>\n    <parent link=\"base_mesh_link\"/>\n    <child link=\"motor_mesh_link\"/>\n  </joint>\n</robot>\n",
+  "viewer_settings": {
+    "mesh_mode": "full",
+    "max_faces_per_mesh": 50000,
+    "max_points_per_mesh": 4000
+  }
+}

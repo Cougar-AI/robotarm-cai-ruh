@@ -1,0 +1,42 @@
+{
+  "source_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/builder_host.urdf",
+  "model_name": "builder_host",
+  "kind": "urdf",
+  "link_count": 1,
+  "joint_count": 0,
+  "mesh_asset_count": 0,
+  "links": {
+    "base_link": {
+      "name": "base_link",
+      "parent": null,
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [],
+      "joints_out": [],
+      "child_links": [],
+      "inertial": {},
+      "extra": {}
+    }
+  },
+  "joints": {},
+  "mesh_assets": {},
+  "mesh_asset_scales": {},
+  "mesh_metrics": {},
+  "warnings": [],
+  "notes": [],
+  "xml_source": "<?xml version=\"1.0\"?>\n<robot name=\"builder_host\">\n  <link name=\"base_link\"/>\n</robot>\n",
+  "viewer_settings": {
+    "mesh_mode": "full",
+    "max_faces_per_mesh": 50000,
+    "max_points_per_mesh": 4000
+  }
+}

@@ -1,0 +1,6 @@
+source_file: /Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/Armv3/Arm.urdf
+kind: urdf
+model_name: Arm
+links: 7
+joints: 6
+warnings: 0

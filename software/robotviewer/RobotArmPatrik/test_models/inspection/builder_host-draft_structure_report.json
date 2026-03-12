@@ -1,0 +1,282 @@
+{
+  "source_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/test_models/builder_host-draft.urdf",
+  "model_name": "builder_host",
+  "kind": "urdf",
+  "link_count": 2,
+  "joint_count": 1,
+  "mesh_asset_count": 0,
+  "links": {
+    "base_link": {
+      "name": "base_link",
+      "parent": null,
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [],
+      "joints_out": [
+        "Base-1_joint"
+      ],
+      "child_links": [
+        "Base-1_link"
+      ],
+      "inertial": {},
+      "extra": {}
+    },
+    "Base-1_link": {
+      "name": "Base-1_link",
+      "parent": "base_link",
+      "world_pos": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_quat_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "meshes": [
+        {
+          "mesh_name": "Base-1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+          "visual_or_collision": "visual",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.181162,
+            0.000214,
+            -0.010426
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.181162,
+            0.000214,
+            -0.010426
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        },
+        {
+          "mesh_name": "Base-1",
+          "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+          "visual_or_collision": "collision",
+          "geom_type": "mesh",
+          "mesh_scale": [
+            0.001,
+            0.001,
+            0.001
+          ],
+          "local_pos": [
+            0.181162,
+            0.000214,
+            -0.010426
+          ],
+          "local_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "world_pos": [
+            0.181162,
+            0.000214,
+            -0.010426
+          ],
+          "world_quat_wxyz": [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "material": null,
+          "extra": {
+            "filename": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+            "scale": "0.001 0.001 0.001"
+          }
+        }
+      ],
+      "joints_out": [],
+      "child_links": [],
+      "inertial": {},
+      "extra": {}
+    }
+  },
+  "joints": {
+    "Base-1_joint": {
+      "name": "Base-1_joint",
+      "joint_type": "fixed",
+      "parent": "base_link",
+      "child": "Base-1_link",
+      "axis_local": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "origin_world": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "origin_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rpy_local": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "quat_world_wxyz": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limits": {},
+      "extra": {}
+    }
+  },
+  "mesh_assets": {},
+  "mesh_asset_scales": {},
+  "mesh_metrics": {
+    "Base-1_link:Base-1:visual": {
+      "mesh_name": "Base-1",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.08996521759033203,
+        -0.08999130249023438,
+        -0.02
+      ],
+      "bounds_max": [
+        0.09,
+        0.08999130249023438,
+        0.075
+      ],
+      "extents": [
+        0.17996521759033202,
+        0.17998260498046875,
+        0.095
+      ],
+      "bbox_center": [
+        1.7391204833981655e-05,
+        0.0,
+        0.027499999999999997
+      ],
+      "vertex_count": 2985,
+      "face_count": 6194,
+      "surface_centroid": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ],
+      "center_mass": [
+        -0.0002816395506031873,
+        -0.000492061410033393,
+        0.007029615412782355
+      ],
+      "is_watertight": false,
+      "volume": 0.00036992967640005013,
+      "recommended_frame_origin": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ]
+    },
+    "Base-1_link:Base-1:collision": {
+      "mesh_name": "Base-1",
+      "mesh_file": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl",
+      "geom_type": "mesh",
+      "scale": [
+        0.001,
+        0.001,
+        0.001
+      ],
+      "bounds_min": [
+        -0.08996521759033203,
+        -0.08999130249023438,
+        -0.02
+      ],
+      "bounds_max": [
+        0.09,
+        0.08999130249023438,
+        0.075
+      ],
+      "extents": [
+        0.17996521759033202,
+        0.17998260498046875,
+        0.095
+      ],
+      "bbox_center": [
+        1.7391204833981655e-05,
+        0.0,
+        0.027499999999999997
+      ],
+      "vertex_count": 2985,
+      "face_count": 6194,
+      "surface_centroid": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ],
+      "center_mass": [
+        -0.0002816395506031873,
+        -0.000492061410033393,
+        0.007029615412782355
+      ],
+      "is_watertight": false,
+      "volume": 0.00036992967640005013,
+      "recommended_frame_origin": [
+        -0.00012414300966421686,
+        -0.00021448930692627953,
+        0.010426321760890575
+      ]
+    }
+  },
+  "warnings": [],
+  "notes": [],
+  "xml_source": "<?xml version=\"1.0\"?>\n<robot name=\"builder_host\">\n  <link name=\"base_link\" />\n  <link name=\"Base-1_link\">\n    <inertial>\n      <origin xyz=\"0 0 0\" rpy=\"0 0 0\" />\n      <mass value=\"0.369929676\" />\n      <inertia ixx=\"0.00127683503\" ixy=\"0\" ixz=\"0\" iyy=\"0.0012766421\" iyz=\"0\" izz=\"0.00199704124\" />\n    </inertial>\n    <visual>\n      <origin xyz=\"0.181162 0.000214 -0.010426\" rpy=\"0 0 0\" />\n      <geometry>\n        <mesh filename=\"/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl\" scale=\"0.001 0.001 0.001\" />\n      </geometry>\n    </visual>\n    <collision>\n      <origin xyz=\"0.181162 0.000214 -0.010426\" rpy=\"0 0 0\" />\n      <geometry>\n        <mesh filename=\"/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/meshes/Base-1.stl\" scale=\"0.001 0.001 0.001\" />\n      </geometry>\n    </collision>\n  </link>\n  <joint name=\"Base-1_joint\" type=\"fixed\">\n    <origin xyz=\"0 0 0\" rpy=\"0 0 0\" />\n    <parent link=\"base_link\" />\n    <child link=\"Base-1_link\" />\n  </joint>\n</robot>",
+  "viewer_settings": {
+    "mesh_mode": "full",
+    "max_faces_per_mesh": 50000,
+    "max_points_per_mesh": 4000
+  }
+}

@@ -18,3 +18,7 @@ software/ws_*/src/*
 
 # User-specific viewer directory
 robot-viewer
+
+# Operating System-specific files
+# MacOS
+.DS_Store

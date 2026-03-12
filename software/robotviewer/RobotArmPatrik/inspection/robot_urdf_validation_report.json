@@ -1,0 +1,150 @@
+{
+  "urdf_path": "/Users/Jonathan_1/Documents/CougarAI/Workshops_Projects/FA25/RobotArm/robotarm-cai-ruh/software/robotviewer/RobotArmPatrik/Robot.urdf",
+  "link_count": 24,
+  "unique_link_count": 12,
+  "joint_count": 23,
+  "unique_joint_count": 21,
+  "duplicate_links": {
+    "Motor_Component2": 3,
+    "Motor_Component1": 3,
+    "Connector": 3,
+    "Motor-Casing": 3,
+    "Motor2": 3,
+    "SmallMotorCasing": 2,
+    "SmallConnector": 2
+  },
+  "duplicate_joints": {
+    "Motor_Component1_Revolute-6": 3
+  },
+  "self_joints": [
+    "Motor-Casing_Revolute-19"
+  ],
+  "candidate_roots_by_name": [
+    "Base-1"
+  ],
+  "missing_parent_links": [],
+  "missing_child_links": [],
+  "continuous_joint_count": 10,
+  "continuous_joints": [
+    {
+      "name": "Connector_Revolute-7",
+      "parent": "Connector",
+      "child": "Motor_Component1",
+      "axis": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Connector_Revolute-9",
+      "parent": "Connector",
+      "child": "Motor_Component1",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Motor-Casing_Revolute-14",
+      "parent": "Motor-Casing",
+      "child": "Connector",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Motor-Casing_Revolute-19",
+      "parent": "Motor-Casing",
+      "child": "Motor-Casing",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Base-1_Revolute-20",
+      "parent": "Base-1",
+      "child": "Motor-Casing",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "SmallConnector_Revolute-25",
+      "parent": "SmallConnector",
+      "child": "SmallMotorCasing",
+      "axis": [
+        0.0,
+        -3.9258213285614963e-63,
+        1.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "SmallConnector_Revolute-32",
+      "parent": "SmallConnector",
+      "child": "SmallMotorCasing-1",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Motor_Component1_Revolute-6",
+      "parent": "Motor_Component1",
+      "child": "Motor_Component2",
+      "axis": [
+        1.0,
+        -4.447480477593384e-48,
+        0.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Motor_Component1_Revolute-6",
+      "parent": "Motor_Component1",
+      "child": "Motor_Component2",
+      "axis": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "axis_norm": 1.0
+    },
+    {
+      "name": "Motor_Component1_Revolute-6",
+      "parent": "Motor_Component1",
+      "child": "Motor_Component2",
+      "axis": [
+        -0.0,
+        -2.938681627714443e-47,
+        -1.0
+      ],
+      "axis_norm": 1.0
+    }
+  ],
+  "axis_norm_range": {
+    "min": 1.0,
+    "max": 1.0
+  },
+  "summary": [
+    "URDF is not valid as-authored because link names are not unique.",
+    "URDF is not valid as-authored because joint names are not unique.",
+    "At least one joint references the same link as both parent and child.",
+    "The file contains more non-fixed joints than a 6-DOF serial arm should expose."
+  ]
+}
