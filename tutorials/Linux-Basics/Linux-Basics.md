@@ -1,6 +1,6 @@
 # Linux Basics — Workshop Handout
 
-*Companion to the 1-hour workshop slides. Keep this open in a second window while you follow along — every command here is safe to run.*
+
 
 ---
 
